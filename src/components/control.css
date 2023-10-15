@@ -1,0 +1,60 @@
+ 
+
+.orbitControl {
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px;
+  background-color: rgb(52 95 232);
+  border-radius: 8px;
+  margin-right: 10px;
+}
+ 
+.planet-block {
+  position: relative;
+ 
+  height:100%;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 28px rgb(0 0 0/5%);
+  background-color: #00000078;
+}
+
+.planet-block .orbit-tag{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 8px 0 8px;
+  background-color: #5490ff80;
+  padding: 0px 6px;
+  font-size: 12px;
+ 
+}
+
+.edit-mode-A .planet-block .planet{
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.planet-block select{
+  background-color: transparent;
+
+}
+ 
+.planet-block option{
+  color:black;
+}
+
+
+.button-apply{
+  background-color: #5490ffd2;
+  border-radius: 4px;
+ 
+}
+
+.button-apply:hover{
+  background-color:#5490ff;
+}

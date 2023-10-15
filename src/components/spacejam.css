@@ -1,0 +1,325 @@
+.inputNumber {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  text-align: center;
+  padding: 0 0 0 3px;
+  margin-left: 7px;
+  border-radius: 2px;
+}
+
+.inputOnes {
+  width: 38px;
+}
+
+.inputHuns {
+  width: 50px;
+}
+.inputThous {
+  width: 56px;
+}
+
+.galaxy-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: rgb(29, 20, 90);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(29, 20, 90, 0.76) 1%,
+    rgba(8, 82, 150, 0.17690826330532217) 40%,
+    rgba(0, 0, 0, 0) 69%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(29, 20, 90, 0.76) 1%,
+    rgba(8, 82, 150, 0.17690826330532217) 40%,
+    rgba(0, 0, 0, 0) 69%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(29, 20, 90, 0.76) 1%,
+    rgba(8, 82, 150, 0.17690826330532217) 40%,
+    rgba(0, 0, 0, 0) 69%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d145a",endColorstr="#000000",GradientType=1);
+}
+.milkyWay {
+  position: relative;
+}
+
+.sun-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 44;
+}
+
+.sun {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffd100;
+  background-image: url(/image/Sun.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 25px #ffd100;
+}
+
+.sun-container:hover .sun {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.sun-container:active .sun {
+  transform: scale(1);
+  opacity: 0.9;
+}
+
+.string {
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  right: 0;
+  width: 50%;
+
+  transform-origin: bottom left;
+}
+
+.string-text {
+  font-size: 12px;
+  color: #da6e08 ;
+  position: absolute;
+  right: -30px;
+}
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #7f7dff85;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 7px #7288ff54;
+}
+
+.orbitPlanet {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.milkyWay .planet {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: -15;
+  left: -15;
+}
+
+.planet {
+  border-radius: 50%;
+}
+
+.planet.small {
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+
+.planet.middle {
+  width: 36px;
+  height: 36px;
+  display: inline;
+}
+.planet.big {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+
+.planet.huge {
+  width: 84px;
+  height: 84px;
+  display: inline-block;
+}
+
+.planet-empty {
+  background-color: #0e0e0e;
+  border: 2px solid rgba(31, 124, 247, 0.432);
+}
+.Mercury {
+  background-color: #c9a227;
+  background-image: url(/image/Mercury.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 25px #c9a3277c;
+}
+
+.Venus {
+  background-color: #8c5d23;
+  background-image: url(/image/Venus.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 25px #8c5d23b8;
+}
+
+.Earth {
+  background-color: #0496ff;
+  background-image: url(/image/Earth.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 25px #0496ff69;
+}
+
+.Mars {
+  background-color: #db3a34;
+  background-image: url(/image/Mars.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 25px #db393481;
+}
+
+.Jupiter {
+  background-color: #ff9100;
+  background-image: url(/image/Jupiter.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 25px #ff910093;
+}
+
+.Saturn {
+  background-color: #a81510;
+  background-image: url(/image/Saturn.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 25px #a81510af;
+}
+
+.Uranus {
+  background-color: #004e89;
+  background-image: url(/image/Uranus.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 25px #004e89a2;
+}
+
+.board-head {
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+}
+.display-board {
+  border: 1px solid rgb(135 135 135 / 26%);
+  padding: 8px;
+  position: relative;
+  color: white;
+  border-radius: 8px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.display-board::before {
+  content: "";
+  background-image: url(/image/displayboard.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1; 
+}
+
+.theme-select {
+  color: white;
+  background-color: #ffffff17;
+  border-radius: 5px;
+}
+
+.theme-select option {
+  color: black;
+}
+
+.block-panel {
+  border: 1px solid black;
+  border-radius: 0 10px 10px 10px;
+  padding: 14px 23px;
+  position: relative;
+}
+
+.block-section {
+  margin-bottom: 12px;
+}
+.block-panel .header {
+  position: absolute;
+  top: -21px;
+  left: 0;
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 6px 6px 0 0;
+  padding: 1px 40px;
+}
+
+.block-panel .header {
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(90deg, rgba(255,255,255,0.022846638655462215) 18%, rgba(255,255,255,0.21332282913165268) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255,255,255,0.022846638655462215) 18%, rgba(255,255,255,0.21332282913165268) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0.022846638655462215) 18%, rgba(255,255,255,0.21332282913165268) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+.block-panel:hover .header {
+  background: rgb(84,144,255);
+  background: -moz-linear-gradient(90deg, rgba(84,144,255,1) 19%, rgba(91,186,116,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(84,144,255,1) 19%, rgba(91,186,116,1) 100%);
+  background: linear-gradient(90deg, rgba(84,144,255,1) 19%, rgba(91,186,116,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5490ff",endColorstr="#5bba74",GradientType=1);
+}
+
+.condition-panel {
+  height: 100%;
+  background-color: #39393940;
+}
+
+.condition-section .header {
+  background-color: #292929;
+}
+
+.setup-panel {
+  background-color: #39393940;
+}
+
+.setup-section .header {
+  background-color: #292929;
+}
+
+.class-panel {
+  background-color: #39393940;
+}
+
+.class-section .header {
+  background-color: #292929;
+}
+
+.block-panel:hover {
+  border: 1px solid #5490ff33;
+  filter: drop-shadow(0px 0px 30px #5490ff6e);
+}
+
+.planet-block .icon{
+  margin-right: 5px;
+  width:14px;
+  height:14px;
+  display: inline-block;
+  opacity: .7;
+  margin-top:-1px;
+}
