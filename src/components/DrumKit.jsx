@@ -80,8 +80,8 @@ const Keyboard = () => {
             Drum Kit
           </h1>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-14">
-            This is the selection of drum sounds options. <br></br> Press them
-            to hear what kind of drum sound it is!
+            Drum sounds options! Press them
+            to hear the sound. <br></br>Get their corresponding <span className="block-jam blue">Play Sound</span> number on the planets!
           </p>
           <div className="grid grid-cols-4 gap-5 max-w-4xl">
             {drumButtons.map((button, index) => (
