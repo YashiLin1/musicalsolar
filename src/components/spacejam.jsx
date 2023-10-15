@@ -93,15 +93,14 @@ function Spacejam() {
       </div>
       <div>
         <div className=" mb-24">
-          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-10 leading-[6rem]">
+          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
             Compose Your Beats!
           </h1>
-          <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem]">
+          {/* <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem]">
             Make sure your speaker is on!
-          </p>
-          <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem]">
-            Explore the Setup, Loop and Class.
-            <br></br>
+          </p> */}
+          <p className="text-2xl text-gray-200 max-w-3xl leading-[2.4rem]">
+           
             Click
             <img className="planet small sun mx-4" src="/image/Sun.jpg" />
             in the middle to update the animation.

@@ -76,7 +76,7 @@ const Keyboard = () => {
     <section className="2xl:container 2xl:mx-auto mx-10 my-36 z-10">
       <div className="grid xl:grid-cols-2 gap-16">
         <div>
-          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-10 leading-relaxed lg:leading-relaxed">
+          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
             Drum Kit
           </h1>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-14">
@@ -97,7 +97,7 @@ const Keyboard = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-10 leading-relaxed lg:leading-relaxed">
+          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
           Counting Beats
           </h1>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-8">
@@ -178,7 +178,7 @@ const Keyboard = () => {
                   <td className="text-center">500</td>
                 </tr>
                 <tr>
-                  <td className="text-center">Degree</td>
+                  <td className="text-center">Degree (Reference)</td>
                   <td width={48}>
                     0°
                   </td>
