@@ -93,7 +93,10 @@ function Spacejam() {
           <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mb-4 leading-relaxed lg:leading-relaxed">
             Compose Your Beats!
           </h1>
-          <div className="text-xl text-gray-200 max-w-3xl leading-[2.4rem] mb-20">
+          <div className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem] ">
+            Explore Setup, Loop and Class.
+          </div>
+          <div className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem] mb-20">
             Click
             <div className="planet small sun mx-4"></div>
             in the middle to update the animation!
@@ -211,7 +214,7 @@ function Spacejam() {
 
         <section className="block-section class-section">
           <div className="class-panel block-panel ">
-            <div className="header">Class: Planet</div>
+            <div className="header">Class</div>
 
             <div className="float-right mb-4">
               <span className="preset-dropdown mr-2">

@@ -36,7 +36,7 @@ function LearnMore() {
             them every 0.05 milliseconds to create the illusion of movement.
           </p>
           <h6 className="text-theme-blue text-2xl mb-3">
-            Set Refresh Time to 250 ms and see what happens!
+            Set Refresh Time to 250 ms, click <div className="planet small sun mx-4"></div> to update, see what happens!
           </h6>
         </div>
         <div className="learn-board py-8 px-6 mmb-4">
