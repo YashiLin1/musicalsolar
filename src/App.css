@@ -348,14 +348,14 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .rhythm-table th {
-  font-size: 16px;
+   
   padding: 12px 6px;
   border-right: 1px solid rgba(255, 255, 255, 0.164);
   border-bottom: 1px solid rgb(0, 27, 100);
 }
 .rhythm-table td {
-  font-size: 16px;
-  padding: 12px 6px;
+  
+  padding: 12px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.164);
   border-bottom: 1px solid rgb(0, 27, 100);
 }
@@ -365,14 +365,32 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 100%;
   width: 14px;
   height: 14px;
-  background-color: #538fff;
-  box-shadow: 0 0 15px #538fff;
+  background-color: #ffffffc5;
+ 
   margin-right: 2px;
 }
 
-#costheta {
-  color: red;
+.note.blue{
+  background-color: #538fff;
+  box-shadow: 0 0 15px #538fff;
 }
-#sintheta {
-  color: blue;
+
+.challenge-section table:hover .note.hover-blue{
+  background-color: #538fff;
+  box-shadow: 0 0 15px #538fff;
 }
+
+.challenge-section table:hover .hover-blue{
+  color: #538fff;
+}
+
+.challenge-section table:hover .note.hover-orange{
+  background-color: #ff7627;
+  box-shadow: 0 0 15px #ff7627;
+}
+
+.challenge-section table:hover .hover-orange{
+  color: #ff7627;
+}
+
+ 

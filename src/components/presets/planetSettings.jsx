@@ -47,7 +47,7 @@ export const challengeA = [
   createSettings("Venus", 2, 1400, 1, 180, 2),
   createSettings("Earth", 3, 2800, 1, 135, 1),
   createSettings("Mars", 4, 1400, 1, 0, 4),
-  createSettings("Jupiter", 5, 1400, 1, 80, 5),
+  createSettings("Jupiter", 5, 1400, 1, 90, 5),
   createSettings("Saturn", 6, 4000, 1, 0, 0),
   createSettings("Uranus", 7, 4000, 1, 0, 0),
 ];
@@ -65,12 +65,12 @@ export const challengeB = [
 
 export const challengeC = [
   createSettings("Mercury", 1, 900, 1, 180, 5),
-  createSettings("Venus", 2, 1800, 1, 0, 1),
-  createSettings("Earth", 3, 3600, 1, 90, 2),
-  createSettings("Mars", 4, 3600, 1, 200, 2),
-  createSettings("Jupiter", 5, 3600, 1, 245, 1),
-  createSettings("Saturn", 6, 3600, 1, 265, 2),
-  createSettings("Uranus", 7, 3600, 1, 288, 1),
+  createSettings("Venus", 2, 900, 1, 0, 5),
+  createSettings("Earth", 3, 1800, 1, 0, 1),
+  createSettings("Mars", 4, 1800, 1, 180, 2),
+  createSettings("Jupiter", 5, 3600, 1, 200, 2),
+  createSettings("Saturn", 6, 3600, 1, 245, 1),
+  createSettings("Uranus", 7, 3600, 1, 290, 1),
 ];
 export const newset1 = [
   createSettings("Mercury", 1, 1000, 1, 0, 0),

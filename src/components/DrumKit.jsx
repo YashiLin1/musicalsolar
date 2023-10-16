@@ -109,7 +109,7 @@ const Keyboard = () => {
               <thead>
                 <tr>
                   <th>Notes</th>
-                  <th colSpan="8">Beats Duration</th>
+                  <th colSpan="8">A Bar</th>
                   <th>Orbit Time</th>
                 </tr>
               </thead>
