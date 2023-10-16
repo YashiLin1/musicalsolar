@@ -76,13 +76,12 @@ const Keyboard = () => {
     <section className="2xl:container 2xl:mx-auto mx-10 my-36 z-10">
       <div className="grid xl:grid-cols-2 gap-16">
         <div>
-          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
+          <h1 className="text-4xl lg:text-6xl font-bold text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
             Drum Kit
           </h1>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-14">
-            Drum sounds options! Press them to hear the sound. <br></br>Get their corresponding{" "}
-            <span className="block-jam blue">Play Sound</span> number on the
-            planets!
+             Press to hear the sound. <br></br> Remember their number for the 
+            <span className="block-jam blue">Play Sound</span>!
           </p>
           <div className="grid grid-cols-12 gap-5 md:max-w-3xl">
             {drumButtons.map((button, index) => (
@@ -98,13 +97,11 @@ const Keyboard = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
+          <h1 className="text-4xl lg:text-6xl font-bold  text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
             Counting Beats
           </h1>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-8">
-            In music, notes represent different durations of time. For example,
-            a whole note lasts for 4 beats, a half note lasts for 2 beats, a
-            quarter note lasts for 1 beat, and so on. If a planet orbit time
+            In music, notes represent different durations of time.  If a planet orbit time
             4000 represent a whole note, the following sheet is reference.
           </p>
           <div>
@@ -112,7 +109,7 @@ const Keyboard = () => {
               <thead>
                 <tr>
                   <th>Notes</th>
-                  <th colSpan="8">A bar = Time duration of 1 whole note</th>
+                  <th colSpan="8">Beats Duration</th>
                   <th>Orbit Time</th>
                 </tr>
               </thead>
@@ -179,7 +176,7 @@ const Keyboard = () => {
                   <td className="text-center">500</td>
                 </tr>
                 <tr>
-                  <td className="text-center">Start Degree (Reference)</td>
+                  <td className="text-center">Start Degree Reference </td>
                   <td width={48}>
                     0°
                   </td>
@@ -210,13 +207,14 @@ const Keyboard = () => {
             </table>
           </div>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-4">
-            <span className="font-bold text-gradient-1 text-2xl">Trick:</span>{" "}
+            <span className="font-bold text-gradient-1 text-2xl">Tips:</span>{" "}
             You can create a Half Note rhythm with two Whole Note planets!
           </p>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-14">
             <span className="font-bold text-gradient-1 text-2xl">Quiz:</span>{" "}
             The minimum orbit time limit here is 900, how do you achieve a 500
             orbit-time-beat using two planets?
+            (Answer: You create two 1000 orbit-time planets with degree 0 and 180!)
           </p>
         </div>
       </div>

@@ -5,8 +5,8 @@ import ChallengeCVid from "/video/ChallengeCVid.mp4";
 
 function Challenges() {
   return (
-    <section className="2xl:container 2xl:mx-auto mx-10 mb-36">
-      <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 lg:leading-relaxed">
+    <section className="2xl:container 2xl:mx-auto mx-10 mb-56">
+      <h1 className="text-7xl lg:text-8xl font-bold text-white text-gradient-1 mr-6 mb-16 lg:leading-relaxed">
         Recreate these beats!
       </h1>
       <img className="logo-img mb-6" src="/image/neroart.png" />

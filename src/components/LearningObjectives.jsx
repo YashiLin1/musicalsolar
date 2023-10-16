@@ -3,7 +3,7 @@ import React from "react";
 function LearningObjectives() {
   return (
     <section className="2xl:container 2xl:mx-auto mx-10 mb-36">
-      <h1 className="text-3xl lg:text-5xl font-bold text-white text-gradient-1 mr-6 lg:leading-relaxed">
+      <h1 className="text-4xl lg:text-6xl font-bold text-white text-gradient-1 mr-6 lg:leading-relaxed">
         Computer Science Sparks Creativity!
       </h1>
       <img className="logo-img mb-6" src="/image/neroart.png" />
@@ -11,14 +11,13 @@ function LearningObjectives() {
         What does this game have to do with Computer Science?
       </p>
       <div className="grid lg:grid-cols-3 gap-10">
-        <div className="learn-board py-8 px-6 mb-4">
+        <div className="learn-board py-12 px-8 mb-4">
           <h5 className="text-3xl font-bold text-gradient-1 leading-relaxed">
             Computational Thinking
           </h5>
           <p className="text-lg font-light text-gray-200 max-w-3xl leading-[2rem] ">
-            Solving problem in Computer Science is about breaking a problem down
-            into smaller parts to solve it. When you break complex rhythms into
-            single beat to complete the challenge one step at a time and
+            Break a problem down into smaller parts to solve it! When you break complex rhythms into
+            single beat to solve it and
             recognize pattern of the planets, you are developing the skill!
             Using logical reasoning to solve problems is a fundamental mindset
             in Computer Science!

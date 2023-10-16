@@ -213,9 +213,14 @@ function Solar({
       </div>
       <div className=" mb-4 mt-4">
         <div className="display-board ">
-          <div className="board-head mb-2 text-base">
-          <div className="planet tiny planet-empty mx-2"></div> Planets Monitor 
-            <div className="float-right">
+          <div className="board-head mb-2 text-base flex justify-between">
+           <div className="text-white">Planets Monitor</div>
+          <div className=" text-gray-200 ">
+            Click
+            <div className="planet small sun mx-4 align-middle"></div>
+            in the middle to refresh animation!
+          </div>
+            <div className=" ">
               <span className="inline-block mr-2">
                 <svg
                   className="icon"

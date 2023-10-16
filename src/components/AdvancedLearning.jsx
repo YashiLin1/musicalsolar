@@ -40,7 +40,7 @@ function AdvancedLearning() {
           </p>
 
           <h5 className="text-3xl font-bold text-white leading-relaxed">
-            4.Math: Sine and Cosine
+            4.Math: Unit Circle
           </h5>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-8">
             Now we know the current rotation angle and the side length (R) of a

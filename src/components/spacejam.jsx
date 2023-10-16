@@ -96,7 +96,7 @@ function Spacejam() {
       </div>
       <div>
         <div className=" mb-14">
-          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mb-4 leading-relaxed lg:leading-relaxed">
+          <h1 className="text-5xl xl:text-7xl font-bold text-white text-gradient-1 mb-4 leading-relaxed xl:leading-relaxed">
             Compose Your Beats!
           </h1>
           <div className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem] mb-20">
@@ -158,10 +158,10 @@ function Spacejam() {
                     </svg>
                   </span>
                   <span className="text-white">
-                    Draw <span style={{ color: "#da6e08" }}>String </span> at{" "}
+                    Draw <span style={{ color: "#da6e08" }}>String </span> at 
                   </span>
                   <input
-                    className="inputNumber inputHuns "
+                    className="inputNumber inputHuns mr-2"
                     type="number"
                     step="1"
                     min="0"
@@ -188,9 +188,8 @@ function Spacejam() {
                     </svg>
                   </span>
                   <span className="text-white">
-                    Draw Star <div className="planet tiny sun mx-2"></div>
-                    and Planets
-                    <div className="planet tiny planet-empty mx-2"></div>
+                    Draw Star <div className="planet tiny sun mx-1 align-middle"></div>
+                    and Planets <div className="planet tiny planet-empty mx-1 align-middle"></div>
                   </span>
                 </div>
               </div>
@@ -198,9 +197,9 @@ function Spacejam() {
             <section className="block-section loop-section text-white">
               <div className="loop-panel block-panel">
                 <div className="header ">Loop</div>
-                <div className="mb-4 text-lg">
-                  Planet<div className="planet tiny planet-empty mx-2"></div>:
-                  Orbit around star
+                <div className="mb-4 text-lg leading-loose">
+                  Planets<div className="planet tiny planet-empty mx-2 align-middle"></div>
+                  Orbit around Star <div className="planet tiny sun mx-1 align-middle"></div>
                 </div>
 
                 <div className="mb-4 text-lg condition-panel">
