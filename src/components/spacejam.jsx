@@ -51,7 +51,6 @@ function Spacejam() {
     setPlanets([...updatedPlanets]);
   };
 
-
   const handleStringDegreeChange = (event) => {
     const newStringDegree = parseFloat(event.target.value);
     setStringDegree(newStringDegree);
@@ -86,19 +85,22 @@ function Spacejam() {
           planetSettings={planets}
           soundOn={soundOn}
           handleSunButtonClick={handleSunButtonClick}
-
           stringDegree={stringDegree}
         />
       </div>
       <div>
-        <div className="mt-20 mb-14">
-          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mb-6 leading-relaxed lg:leading-relaxed">
+        <div className=" mb-14">
+          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mb-4 leading-relaxed lg:leading-relaxed">
             Compose Your Beats!
           </h1>
- 
+          <div className="text-xl text-gray-200 max-w-3xl leading-[2.4rem] mb-20">
+            Click
+            <div className="planet small sun mx-4"></div>
+            in the middle to update the animation!
+          </div>
         </div>
 
-        <div className=" mb-12">
+        <div className=" mb-10">
           <div className="grid md:grid-cols-2 gap-5">
             <section className="block-section setup-section">
               <div className="setup-panel block-panel ">
@@ -185,7 +187,6 @@ function Spacejam() {
                     <div className="planet tiny planet-empty mx-2"></div>
                   </span>
                 </div>
-
               </div>
             </section>
             <section className="block-section condition-section text-white">
@@ -234,13 +235,13 @@ function Spacejam() {
                 Apply
               </button>
             </div>
-            
+
             {isEditMode ? (
               <div className="text-slate-300 mt-2 text-lg ">
                 Class Planet is the blueprint of creating planets!
               </div>
             ) : (
-<div className="text-slate-300 mt-2 text-lg ">
+              <div className="text-slate-300 mt-2 text-lg ">
                 Change the properties of each planet!
               </div>
             )}

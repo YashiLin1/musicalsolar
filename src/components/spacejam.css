@@ -217,12 +217,13 @@
 
 .board-head {
   color: white;
-  border-radius: 8px;
+
   padding: 12px;
+  border-bottom:1px solid #ffffff26;
 }
 .display-board {
   border: 1px solid rgb(135 135 135 / 26%);
-  padding: 8px;
+ 
   position: relative;
   color: white;
   border-radius: 8px;
