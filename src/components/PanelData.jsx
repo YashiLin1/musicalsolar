@@ -9,8 +9,8 @@ function DisplayRadian({ planetSettings, planetDegrees, planetRadians }) {
               <th>Orbit</th>
               <th><div className="planet tiny planet-empty mx-2"></div></th>
               <th>Planet</th>
-              <th>Current Degree</th>
-              <th>Current Radian</th>
+              <th>Degree</th>
+              <th>Radian</th>
             </tr>
           </thead>
           <tbody>

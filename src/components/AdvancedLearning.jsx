@@ -5,7 +5,7 @@ function AdvancedLearning() {
   return (
     <section className="2xl:container 2xl:mx-auto mx-10 mb-36">
       <h1 className="text-3xl lg:text-5xl font-bold text-white text-gradient-1 mr-6 mb-3 lg:leading-relaxed">
-        Advanced Learning #2
+        Advanced Learning 
       </h1>
       <div className="grid grid-cols-2">
         <div className="">

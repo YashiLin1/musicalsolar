@@ -1,7 +1,7 @@
 import Spacejam from "../components/spacejam";
 import Keyboard from "../components/DrumKit";
 import Preview from "/video/Preview.mp4";
-import LearnMore from "../components/LearnMore";
+import Learning from "../components/Learning";
 import LearningObjectives from "../components/LearningObjectives"; 
 import AdvancedLearning from "../components/AdvancedLearning";
 
@@ -38,7 +38,7 @@ function HomePage() {
       <Keyboard />
       
       <LearningObjectives />
-      <LearnMore />
+      <Learning />
       <AdvancedLearning />
     </div>
   );

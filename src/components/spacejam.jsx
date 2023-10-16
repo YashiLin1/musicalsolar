@@ -10,6 +10,8 @@ import {
   Orbit1091,
   Orbit923,
   newset1,
+  newset2,
+  newset3
 } from "./presets/planetSettings";
 import { backgroundMusic } from "./presets/bgm";
 
@@ -70,6 +72,8 @@ function Spacejam() {
     Orbit1091: Orbit1091,
     Orbit923: Orbit923,
     newset1: newset1,
+    newset2: newset2,
+    newset3: newset3,
   };
 
   const handleApplyPreset = () => {
@@ -237,6 +241,8 @@ function Spacejam() {
                   <option value="Challenge A">Challenge A</option>
                   <option value="Challenge B">Challenge B</option>
                   <option value="newset1">New Set 1</option>
+                  <option value="newset2">New Set 2</option>
+                  <option value="newset3">New Set 3</option>
                 </select>
               </span>
               <button

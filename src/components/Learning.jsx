@@ -1,10 +1,10 @@
 import React from "react";
 
-function LearnMore() {
+function Learning() {
   return (
     <section className="2xl:container 2xl:mx-auto mx-10 mb-36">
-      <h1 className="text-3xl lg:text-5xl font-bold text-white text-gradient-1 mr-6 mb-3 lg:leading-relaxed">
-        Advance Learning #1
+      <h1 className="text-3xl lg:text-5xl font-bold text-white text-gradient-1 mr-6 mb-12 lg:leading-relaxed">
+         Learning 
       </h1>
        
 
@@ -36,7 +36,7 @@ function LearnMore() {
             them every 0.05 milliseconds to create the illusion of movement.
           </p>
           <h6 className="text-theme-blue text-2xl mb-3">
-            Set Refresh Time to 250 ms, click <div className="planet small sun mx-4"></div> to update, see what happens!
+            Set Refresh Time to 130 ms, click <div className="planet small sun mx-4"></div> to update, see what happens!
           </h6>
         </div>
         <div className="learn-board py-8 px-6 mmb-4">
@@ -63,8 +63,7 @@ function LearnMore() {
             In computer programming, a loop continuously checks a condition and
             triggers actions when met. In this solar system, the computer is
             checking if a planet crosses the string. When the planet satisfies
-            the condition, it immediately triggers a action. This action is
-            <span className="block-jam blue">Play Sound</span> method associated
+            the condition, it triggers a action. This action is <span className="block-jam blue">Play Sound</span> method associated
             with the planet object.
           </p>
           <h6 className="text-theme-blue text-2xl mb-3">
@@ -93,7 +92,7 @@ function LearnMore() {
           </h4>
 
           <p className="text-lg  font-light text-gray-200 mb-4">
-            Class Planet is the blueprint of creating planets! Planets are the
+            Class Planet is like a blueprint of creating planets! Planets are the
             instances (objects) of this class with different properties!{" "}
             <br></br>In this musical solar system, Class Planet is designed to
             orbit around the Sun. Each planet has its own properties (Name,
@@ -110,4 +109,4 @@ function LearnMore() {
   );
 }
 
-export default LearnMore;
+export default Learning;

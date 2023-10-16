@@ -68,3 +68,23 @@ export const newset1 = [
   createSettings("Saturn", 6, 1000, 1, 0, 0),
   createSettings("Uranus", 7, 1000, 1, 0, 0),
 ];
+
+export const newset2 = [
+  createSettings("Mercury", 1, 1000, 1, 0, 0),
+  createSettings("Venus", 2, 1000, 1, 0, 0 ),
+  createSettings("Earth", 3, 1000, 1, 0, 0),
+  createSettings("Mars", 4, 1000, 1, 0, 0),
+  createSettings("Jupiter", 5, 1000, 1, 0, 0),
+  createSettings("Saturn", 6, 1000, 1, 0, 0),
+  createSettings("Uranus", 7, 1000, 1, 0, 0),
+];
+
+export const newset3 = [
+  createSettings("Mercury", 1, 1000, 1, 0, 0),
+  createSettings("Venus", 2, 1000, 1, 0, 0 ),
+  createSettings("Earth", 3, 1000, 1, 0, 0),
+  createSettings("Mars", 4, 1000, 1, 0, 0),
+  createSettings("Jupiter", 5, 1000, 1, 0, 0),
+  createSettings("Saturn", 6, 1000, 1, 0, 0),
+  createSettings("Uranus", 7, 1000, 1, 0, 0),
+];
