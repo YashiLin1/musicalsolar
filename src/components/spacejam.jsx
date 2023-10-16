@@ -44,17 +44,14 @@ function Spacejam() {
 
   const [planets, setPlanets] = useState(defaultSet);
   const [updatedPlanets, setUpdatedPlanets] = useState(defaultSet);
-  const [frameInterval, setframeInterval] = useState(0.05);
+
   const [stringDegree, setStringDegree] = useState(0);
 
   const handleSunButtonClick = () => {
     setPlanets([...updatedPlanets]);
   };
 
-  const handleframeIntervalChange = (event) => {
-    const newframeInterval = parseFloat(event.target.value);
-    setframeInterval(newframeInterval);
-  };
+
   const handleStringDegreeChange = (event) => {
     const newStringDegree = parseFloat(event.target.value);
     setStringDegree(newStringDegree);
@@ -89,18 +86,16 @@ function Spacejam() {
           planetSettings={planets}
           soundOn={soundOn}
           handleSunButtonClick={handleSunButtonClick}
-          frameInterval={frameInterval}
+
           stringDegree={stringDegree}
         />
       </div>
       <div>
-        <div className=" mb-24">
-          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
+        <div className="mt-20 mb-14">
+          <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mb-6 leading-relaxed lg:leading-relaxed">
             Compose Your Beats!
           </h1>
-          <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem]">
-            Make sure your speaker is on!
-          </p>
+ 
         </div>
 
         <div className=" mb-12">
@@ -190,33 +185,7 @@ function Spacejam() {
                     <div className="planet tiny planet-empty mx-2"></div>
                   </span>
                 </div>
-                <div className="mb-2 text-lg ">
-                  <span className="inline-block mr-2">
-                    <svg
-                      className="icon"
-                      viewBox="0 0 1024 1024"
-                      version="1.1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
-                    >
-                      <path
-                        d="M532.042 0C372.404 0 269.006 65.406 187.828 182.052c-14.726 21.16-10.186 50.172 10.356 65.748l86.276 65.418c20.746 15.73 50.264 12.052 66.506-8.296 50.098-62.762 87.26-98.898 165.514-98.898 61.528 0 137.632 39.598 137.632 99.262 0 45.104-37.234 68.268-97.986 102.328-70.846 39.72-164.598 89.152-164.598 212.81V640c0 26.51 21.49 48 48 48h144.942c26.51 0 48-21.49 48-48v-11.546c0-85.72 250.536-89.29 250.536-321.254C883.008 132.512 701.804 0 532.042 0zM512 746.918c-76.392 0-138.542 62.15-138.542 138.542 0 76.39 62.15 138.54 138.542 138.54s138.542-62.15 138.542-138.542-62.15-138.54-138.542-138.54z"
-                        fill="#5bba74"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span className="text-white ">Refresh Time (ms): </span>
-                  <input
-                    className="inputNumber inputThous"
-                    type="number"
-                    step="0.01"
-                    min="0.01"
-                    max="1000"
-                    value={frameInterval}
-                    onChange={handleframeIntervalChange}
-                  />
-                </div>
+
               </div>
             </section>
             <section className="block-section condition-section text-white">
@@ -265,35 +234,14 @@ function Spacejam() {
                 Apply
               </button>
             </div>
-
+            
             {isEditMode ? (
               <div className="text-slate-300 mt-2 text-lg ">
                 Class Planet is the blueprint of creating planets!
               </div>
             ) : (
-              <div className="text-lg text-gray-200 max-w-3xl leading-[2.4rem]">
-                <span className="inline-block align-text-top mr-2">
-                  <svg
-                    className="icon"
-                    viewBox="0 0 1024 1024"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                  >
-                    <path
-                      d="M85.333333 512l298.666667-249.6v499.2z"
-                      fill="#ffffff"
-                    ></path>
-                    <path
-                      d="M320 426.666667h576v170.666666H320z"
-                      fill="#ffffff"
-                    ></path>
-                  </svg>
-                </span>
-                Click
-                <div className="planet small sun mx-4"></div>
-                in the middle to update the animation.
+<div className="text-slate-300 mt-2 text-lg ">
+                Change the properties of each planet!
               </div>
             )}
 

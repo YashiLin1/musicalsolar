@@ -2,7 +2,7 @@ import React from "react";
 
 function DisplayRadian({ planetSettings, planetDegrees, planetRadians }) {
   return (
-    <div className="px-12 mb-20 mt-5">
+    <div className=" mb-4 mt-4">
     <div className="display-board text-center">
       {/* <div className="board-head">Real-time Planet Position Data</div> */}
 

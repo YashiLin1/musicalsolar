@@ -13,9 +13,14 @@ function Solar({
   planetSettings,
   soundOn,
   handleSunButtonClick,
-  frameInterval,
   stringDegree,
 }) {
+  const [frameInterval, setframeInterval] = useState(0.05);
+  const handleframeIntervalChange = (event) => {
+    const newframeInterval = parseFloat(event.target.value);
+    setframeInterval(newframeInterval);
+  };
+
   const [planetDegrees, setPlanetDegrees] = useState({
     moveMercury: 0,
     moveVenus: 0,
@@ -161,11 +166,46 @@ function Solar({
 
   return (
     <div className="z-10">
+      <div className="mb-2 text-base">
+        <span className="inline-block mr-2">
+          <svg
+            className="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+          >
+            <path
+              d="M532.042 0C372.404 0 269.006 65.406 187.828 182.052c-14.726 21.16-10.186 50.172 10.356 65.748l86.276 65.418c20.746 15.73 50.264 12.052 66.506-8.296 50.098-62.762 87.26-98.898 165.514-98.898 61.528 0 137.632 39.598 137.632 99.262 0 45.104-37.234 68.268-97.986 102.328-70.846 39.72-164.598 89.152-164.598 212.81V640c0 26.51 21.49 48 48 48h144.942c26.51 0 48-21.49 48-48v-11.546c0-85.72 250.536-89.29 250.536-321.254C883.008 132.512 701.804 0 532.042 0zM512 746.918c-76.392 0-138.542 62.15-138.542 138.542 0 76.39 62.15 138.54 138.542 138.54s138.542-62.15 138.542-138.542-62.15-138.54-138.542-138.54z"
+              fill="#5bba74"
+            ></path>
+          </svg>
+        </span>
+        <span className="text-white ">Refresh Time (ms): </span>
+        <input
+          className="inputNumber inputThous"
+          type="number"
+          step="0.01"
+          min="0.01"
+          max="1000"
+          value={frameInterval}
+          onChange={handleframeIntervalChange}
+        />
+      </div>
       <DisplayPanel
         planetSettings={planetSettings}
         planetDegrees={planetDegrees}
         planetRadians={planetRadians}
       />
+
+      <div className="text-xl text-center text-gray-200 max-w-3xl leading-[2.4rem]">
+ 
+        Click
+        <div className="planet small sun mx-4"></div>
+        in the middle to update the animation!
+      </div>
+
       <div className="galaxy-body">
         <div
           className="milkyWay"
