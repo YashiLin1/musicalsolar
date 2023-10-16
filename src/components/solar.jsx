@@ -13,7 +13,7 @@ function Solar({
   planetSettings,
   soundOn,
   handleSunButtonClick,
-  refreshTime,
+  frameInterval,
   stringDegree,
 }) {
   const [planetDegrees, setPlanetDegrees] = useState({
@@ -92,7 +92,7 @@ function Solar({
 
       let radians = getRadian(settings, currentTime);
       setPlanetRadians((prevRadians) => ({ ...prevRadians, [id]: radians }));
-    }, refreshTime);
+    }, frameInterval);
   };
 
   const cleanUp = (id) => {
