@@ -98,14 +98,8 @@ function Spacejam() {
           <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
             Compose Your Beats!
           </h1>
-          {/* <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem]">
+          <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem]">
             Make sure your speaker is on!
-          </p> */}
-          <p className="text-2xl text-gray-200 max-w-3xl leading-[2.4rem]">
-           
-            Click
-            <img className="planet small sun mx-4" src="/image/Sun.jpg" />
-            in the middle to re-run (update) the animation.
           </p>
         </div>
 
@@ -115,7 +109,21 @@ function Spacejam() {
               <div className="setup-panel block-panel ">
                 <div className="header">Setup</div>
                 <div className="mb-4 text-lg ">
-                  <span className="text-white">Play Music: </span>
+                  <span className="inline-block mr-2">
+                    <svg
+                      className="icon"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M950.848 128l0 640q0 28.576-19.424 50.848t-49.152 34.56-59.136 18.272-55.136 6.016-55.136-6.016-59.136-18.272-49.152-34.56-19.424-50.848 19.424-50.848 49.152-34.56 59.136-18.272 55.136-6.016q60 0 109.728 22.272l0-306.848-438.848 135.424 0 405.152q0 28.576-19.424 50.848t-49.152 34.56-59.136 18.272-55.136 6.016-55.136-6.016-59.136-18.272-49.152-34.56-19.424-50.848 19.424-50.848 49.152-34.56 59.136-18.272 55.136-6.016q60 0 109.728 22.272l0-552.576q0-17.728 10.848-32.288t28-20.288l475.424-146.272q6.848-2.272 16-2.272 22.848 0 38.848 16t16 38.848z"
+                        fill="#5490ff"
+                      ></path>
+                    </svg>
+                  </span>
                   <select
                     value={selectedMusic}
                     className="theme-select"
@@ -131,8 +139,23 @@ function Spacejam() {
                 </div>
 
                 <div className="mb-4 text-lg ">
+                  <span className="inline-block mr-2">
+                    <svg
+                      className="icon"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        d="M448.802236 872.404056l497.138714-646.456719c21.417134-27.849325 17.21996-68.608-9.374403-91.035848-26.594363-22.427848-65.515561-18.032415-86.932695 9.817932L392.734659 750.972168l-5.174164 6.340215L175.011002 456.701956c-20.968495-28.222339-59.814068-33.299417-86.764072-11.341669-26.948982 21.957749-31.799186 62.635689-10.83069 90.858028l248.9577 335.079984c31.427194 42.298762 90.24792 42.953836 122.429317 1.106779z"
+                        fill="#ffffff"
+                      ></path>
+                    </svg>
+                  </span>
                   <span className="text-white">
-                    Set <span style={{ color: "#da6e08" }}>String </span> at{" "}
+                    Draw <span style={{ color: "#da6e08" }}>String </span> at{" "}
                   </span>
                   <input
                     className="inputNumber inputHuns "
@@ -146,7 +169,44 @@ function Spacejam() {
                   <span className="text-white">degree</span>
                 </div>
                 <div className="mb-2 text-lg ">
-                  <span className="text-white">Refresh Time (ms): </span>
+                  <span className="inline-block mr-2">
+                    <svg
+                      className="icon"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        d="M448.802236 872.404056l497.138714-646.456719c21.417134-27.849325 17.21996-68.608-9.374403-91.035848-26.594363-22.427848-65.515561-18.032415-86.932695 9.817932L392.734659 750.972168l-5.174164 6.340215L175.011002 456.701956c-20.968495-28.222339-59.814068-33.299417-86.764072-11.341669-26.948982 21.957749-31.799186 62.635689-10.83069 90.858028l248.9577 335.079984c31.427194 42.298762 90.24792 42.953836 122.429317 1.106779z"
+                        fill="#ffffff"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span className="text-white">
+                    Draw Star <div className="planet tiny sun mx-2"></div>
+                    and Planets
+                    <div className="planet tiny planet-empty mx-2"></div>
+                  </span>
+                </div>
+                <div className="mb-2 text-lg ">
+                  <span className="inline-block mr-2">
+                    <svg
+                      className="icon"
+                      viewBox="0 0 1024 1024"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        d="M532.042 0C372.404 0 269.006 65.406 187.828 182.052c-14.726 21.16-10.186 50.172 10.356 65.748l86.276 65.418c20.746 15.73 50.264 12.052 66.506-8.296 50.098-62.762 87.26-98.898 165.514-98.898 61.528 0 137.632 39.598 137.632 99.262 0 45.104-37.234 68.268-97.986 102.328-70.846 39.72-164.598 89.152-164.598 212.81V640c0 26.51 21.49 48 48 48h144.942c26.51 0 48-21.49 48-48v-11.546c0-85.72 250.536-89.29 250.536-321.254C883.008 132.512 701.804 0 532.042 0zM512 746.918c-76.392 0-138.542 62.15-138.542 138.542 0 76.39 62.15 138.54 138.542 138.54s138.542-62.15 138.542-138.542-62.15-138.54-138.542-138.54z"
+                        fill="#5bba74"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span className="text-white ">Refresh Time (ms): </span>
                   <input
                     className="inputNumber inputThous"
                     type="number"
@@ -184,7 +244,6 @@ function Spacejam() {
             <div className="header">Class: Planet</div>
 
             <div className="float-right mb-4">
-               
               <span className="preset-dropdown mr-2">
                 <select
                   value={selectedPreset}
@@ -206,11 +265,37 @@ function Spacejam() {
                 Apply
               </button>
             </div>
+
             {isEditMode ? (
-              <div className="text-slate-300 mt-2 text-lg font-light">
-                A class is like a blueprint!
+              <div className="text-slate-300 mt-2 text-lg ">
+                Class Planet is the blueprint of creating planets!
               </div>
-            ) : null}
+            ) : (
+              <div className="text-lg text-gray-200 max-w-3xl leading-[2.4rem]">
+                <span className="inline-block align-text-top mr-2">
+                  <svg
+                    className="icon"
+                    viewBox="0 0 1024 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                  >
+                    <path
+                      d="M85.333333 512l298.666667-249.6v499.2z"
+                      fill="#ffffff"
+                    ></path>
+                    <path
+                      d="M320 426.666667h576v170.666666H320z"
+                      fill="#ffffff"
+                    ></path>
+                  </svg>
+                </span>
+                Click
+                <div className="planet small sun mx-4"></div>
+                in the middle to update the animation.
+              </div>
+            )}
 
             {isEditMode ? (
               <div className="edit-mode-A mb-8 clear-both grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -219,7 +304,7 @@ function Spacejam() {
                     <div className="orbit-tag text-slate-400">Orbit</div>
                     <div className="planet big planet-empty mb-6"></div>
                     <h4 className="text-xl font-bold mb-3 text-center text-white">
-                    Class: Planet
+                      Class: Planet
                     </h4>
                     <div className="">
                       <div className="mx-auto w-fit text-slate-400 leading-7 ">

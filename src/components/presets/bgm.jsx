@@ -6,22 +6,22 @@ export const backgroundMusic = [
     },
     {
       value: 2,
-      label: "Music for Orbit Time 923",
+      label: "Play Music for Orbit Time 923",
       soundPath: "/music/Heavy-Rock-Drumless-Backing-Track.mp3",
     },
     {
       value: 3,
-      label: "Music for Orbit Time 1715",
+      label: "Play Music for Orbit Time 1715",
       soundPath: "/music/Reggae.mp3",
     },
     {
       value: 4,
-      label: "Smooth Track 100bmp",
+      label: "Play Smooth Track 100bmp",
       soundPath: "/music/Smooth-Funk-Drumless-Track-100bpm.mp3",
     },
     {
       value: 5,
-      label: "Jazz Track 105bpm",
+      label: "Play Jazz Track 105bpm",
       soundPath: "/music/Jazz-Drumless-Track-105bpm.mp3",
     },
   ];
