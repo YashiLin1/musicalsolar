@@ -20,13 +20,12 @@ function HomePage() {
             </h1>
             <img className="logo-img mb-12" src="/image/neroart.png" />
             <p className="text-xl font-light text-gray-200 max-w-3xl mb-32 leading-[2.4rem]">
-              Program planets to generate your unique rhythms! Explore the logic
-              of the solar system animation, discover their pattern and
+              Program planets to create your own musical solar system! Explore the logic, discover the pattern and
               re-create the beats from the challenge videos!
             </p>
           </div>
           <div className="max-w-[1920px] ">
-            <p className="text-white">Video will update</p>
+            
             <video controls className="video-panel mx-auto">
               <source src={Preview} type="video/mp4" />
               Your browser does not support the video tag.

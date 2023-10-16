@@ -12,7 +12,7 @@ import {
   Orbit923,
   newset1,
   newset2,
-  newset3
+  newset3,
 } from "./presets/planetSettings";
 import { backgroundMusic } from "./presets/bgm";
 
@@ -99,13 +99,10 @@ function Spacejam() {
           <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mb-4 leading-relaxed lg:leading-relaxed">
             Compose Your Beats!
           </h1>
-          <div className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem] ">
-            Explore Setup, Loop and Class.
-          </div>
           <div className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem] mb-20">
             Click
             <div className="planet small sun mx-4"></div>
-            in the middle to update the animation!
+            to refresh animation!
           </div>
         </div>
 
@@ -210,17 +207,19 @@ function Spacejam() {
                   <span className="mr-2 text-theme-blue condition">
                     Condition:
                   </span>
-                  <span>If Planet Cross <span style={{ color: "#da6e08" }}>String </span>:</span>
+                  <span>
+                    If Planet Cross{" "}
+                    <span style={{ color: "#da6e08" }}>String </span>:
+                  </span>
                   <button
-                  className={`button-jam ml-3 sm ${
-                    soundOn ? "purple" : "red opacity-70"
-                  }`}
-                  onClick={toggleSound}
-                >
-                  {soundOn ? "Play Sound On" : "Play Sound Off"}
-                </button>
+                    className={`button-jam ml-3 sm ${
+                      soundOn ? "purple" : "red opacity-70"
+                    }`}
+                    onClick={toggleSound}
+                  >
+                    {soundOn ? "Play Sound On" : "Play Sound Off"}
+                  </button>
                 </div>
-
               </div>
             </section>
           </div>
@@ -456,13 +455,13 @@ function Spacejam() {
                             src={`/image/${planet.name}.jpg`}
                             alt={planet.name}
                           />
-                          <h4 className=" text-theme-blue text-sm">{`${planet.name}`}</h4>
+                          <h4 className="text-slate-400 text-sm">{`${planet.name}`}</h4>
                         </div>
                         <div className="flex-1">
                           <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
                             <div>
                               <div>
-                                Orbit Time
+                                <span className="text-slate-400 text-sm">Orbit Time</span>
                                 <input
                                   className="inputNumber inputThous"
                                   type="number"
@@ -495,7 +494,7 @@ function Spacejam() {
                             </div>
                             <div>
                               <div>
-                                Direction
+                              <span className="text-slate-400 text-sm">Direction</span>
                                 <input
                                   className="inputNumber inputOnes"
                                   type="number"
@@ -527,7 +526,7 @@ function Spacejam() {
                             </div>
                             <div>
                               <div>
-                                Degree
+                                <span className="text-slate-400 text-sm">Degree</span>
                                 <input
                                   className="inputNumber inputHuns"
                                   type="number"
@@ -566,7 +565,7 @@ function Spacejam() {
                               }`}
                             >
                               <div className="inline-block">
-                                Play Sound
+                                <span className="text-slate-400 text-sm">Play Sound</span>
                                 <input
                                   className="inputNumber inputOnes"
                                   type="number"
@@ -614,14 +613,37 @@ function Spacejam() {
               </div>
             )}
 
-            <div className="text-center mb-4">
-              <button
-                className={`button-jam md ${isEditMode ? "blue" : "border"}`}
-                onClick={toggleEditMode}
-              >
-                {isEditMode ? "Edit the Planets!" : "Exit Edit Mode"}
-              </button>
-            </div>
+            {isEditMode ? (
+              <div className="flex justify-between mb-4">
+                <button
+                  className={`button-jam md blue mr-4`}
+                  onClick={toggleEditMode}
+                >
+                  Edit the Planets!
+                </button>
+                <button
+                  className={`button-jam  md yellow `}
+                  onClick={handleSunButtonClick}
+                > Refresh Animation
+                  <div className="planet small sun mx-4"></div>
+                </button>
+                 </div>
+            ) : (
+              <div className="mb-4 flex justify-between ">
+                <button
+                  className={`button-jam md border`}
+                  onClick={toggleEditMode}
+                >
+                  Back
+                </button>
+                <button
+                  className={`button-jam md yellow `}
+                  onClick={handleSunButtonClick}
+                > Refresh Animation
+                  <div className="planet small sun mx-4"></div>
+                </button>
+              </div>
+            )}
           </div>
         </section>
       </div>

@@ -62,10 +62,22 @@ button {
 
 .text-gradient-1 {
   display: inline-block;
-  background: rgb(84,144,255);
-  background: -moz-linear-gradient(90deg, rgba(84,144,255,1) 20%, rgba(91,186,116,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(84,144,255,1) 20%, rgba(91,186,116,1) 100%);
-  background: linear-gradient(90deg, rgba(84,144,255,1) 20%, rgba(91,186,116,1) 100%);
+  background: rgb(84, 144, 255);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(84, 144, 255, 1) 20%,
+    rgba(91, 186, 116, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(84, 144, 255, 1) 20%,
+    rgba(91, 186, 116, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(84, 144, 255, 1) 20%,
+    rgba(91, 186, 116, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5490ff",endColorstr="#5bba74",GradientType=1);
   background-clip: text;
   -moz-background-clip: text;
@@ -114,7 +126,7 @@ button {
 .button-jam {
   align-items: center;
 
-  border-radius: 6px;
+  border-radius: 10px;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
   box-sizing: border-box;
@@ -192,7 +204,7 @@ button {
   border-radius: 5px;
 }
 .block-jam.blue {
-  border-color: #5468ff;
+  border-color: #5468ff94;
   background-color: #5468ff54;
 }
 .block-jam.red {
@@ -217,7 +229,6 @@ button {
   box-shadow: 0 0 0px 1px #6308da, inset 0 0 25px 1px #6308da93,
     inset 0 0 10px 1px #6308da8c;
 }
-
 
 .btn-neon.yellow {
   text-shadow: -2px 2px 5px #da6e08;
@@ -248,25 +259,36 @@ button {
   transform: translateY(1px);
 }
 
-
-.drum-button{
+.drum-button {
   position: relative;
   font-size: 16px;
 }
 
-.drum-number{
+.drum-number {
   font-size: 18px;
   position: absolute;
-  top:0;
-  right:0px;
+  top: 0;
+  right: 0px;
   border-radius: 100%;
-  background: rgb(84,144,255);
-  background: -moz-linear-gradient(90deg, rgba(84, 144, 255, 0.6) 20%, rgba(91, 186, 116, 0.3) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(84, 144, 255, 0.6) 20%, rgba(91, 186, 116, 0.3) 100%);
-  background: linear-gradient(90deg, rgba(84, 144, 255, 0.6) 20%, rgba(91, 186, 116, 0.3) 100%);
+  background: rgb(84, 144, 255);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(84, 144, 255, 0.6) 20%,
+    rgba(91, 186, 116, 0.3) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(84, 144, 255, 0.6) 20%,
+    rgba(91, 186, 116, 0.3) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(84, 144, 255, 0.6) 20%,
+    rgba(91, 186, 116, 0.3) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5490ff",endColorstr="#5bba74",GradientType=1);
-  width:30px;
-  height:30px;
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes move-twink-back {
@@ -312,35 +334,33 @@ button {
   height: 2px;
 }
 
-input[type='range']::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   /* -webkit-appearance: none;
   appearance: none;
  
   */
   cursor: pointer;
- 
 }
- 
 
-.learn-board{
+.learn-board {
   background: #ffffff14;
   border-radius: 18px;
 }
 
-.rhythm-table th{
+.rhythm-table th {
   font-size: 16px;
-  padding:12px 6px;
-  border-right:1px solid rgba(255, 255, 255, 0.164);
-  border-bottom:1px solid rgb(0, 27, 100);
+  padding: 12px 6px;
+  border-right: 1px solid rgba(255, 255, 255, 0.164);
+  border-bottom: 1px solid rgb(0, 27, 100);
 }
-.rhythm-table td{
+.rhythm-table td {
   font-size: 16px;
-  padding:12px 6px;
-  border-right:1px solid rgba(255, 255, 255, 0.164);
-  border-bottom:1px solid rgb(0, 27, 100);
+  padding: 12px 6px;
+  border-right: 1px solid rgba(255, 255, 255, 0.164);
+  border-bottom: 1px solid rgb(0, 27, 100);
 }
 
-.note{
+.note {
   display: inline-block;
   border-radius: 100%;
   width: 14px;
@@ -350,11 +370,9 @@ input[type='range']::-webkit-slider-thumb {
   margin-right: 2px;
 }
 
-
-
-#costheta{
-  color:red;
+#costheta {
+  color: red;
 }
-#sintheta{
-  color:blue;
+#sintheta {
+  color: blue;
 }
