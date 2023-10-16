@@ -315,15 +315,32 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5490ff",endColorstr="#5bba74",GradientType=1);
 }
 
-.condition-panel {
+.loop-panel {
   height: 100%;
   background-color: #39393940;
 }
 
-.condition-section .header {
+.loop-section .header {
   background-color: #292929;
 }
 
+.condition-panel{
+  max-width: 314px;
+  position: relative;
+  padding: 12px;
+  border: 1px solid #5490ff69;
+  border-radius: 7px;
+}
+
+.condition{
+  left:  5px;
+  font-size: 14px;
+  position: absolute;
+  top: -13px;
+  background-color: #0e0e0e;
+  padding: 0 2px;
+  border-radius: 14px;
+}
 .setup-panel {
   background-color: #39393940;
 }

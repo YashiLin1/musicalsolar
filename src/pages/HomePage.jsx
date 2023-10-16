@@ -36,8 +36,9 @@ function HomePage() {
 
       <Spacejam />
       <Keyboard />
-      <LearnMore />
+      
       <LearningObjectives />
+      <LearnMore />
       <AdvancedLearning />
     </div>
   );

@@ -205,7 +205,7 @@ const Keyboard = () => {
                   <td width={48}>
                    315°
                   </td>
-                  <td className="text-center">500</td>
+                  <td className="text-center"> </td>
                 </tr>
               </tbody>
             </table>

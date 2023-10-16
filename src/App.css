@@ -323,8 +323,8 @@ input[type='range']::-webkit-slider-thumb {
  
 
 .learn-board{
+  background: #ffffff14;
   border-radius: 18px;
-  border: 1px solid #ffffff45;
 }
 
 .rhythm-table th{

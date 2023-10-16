@@ -109,14 +109,14 @@ function Spacejam() {
               <div className="setup-panel block-panel ">
                 <div className="header">Setup</div>
                 <div className="mb-4 text-lg ">
-                  <span className="inline-block mr-2">
+                  <span className="inline-block mr-2 align-middle">
                     <svg
                       className="icon"
                       viewBox="0 0 1024 1024"
                       version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
+                      width="20"
+                      height="20"
                     >
                       <path
                         d="M950.848 128l0 640q0 28.576-19.424 50.848t-49.152 34.56-59.136 18.272-55.136 6.016-55.136-6.016-59.136-18.272-49.152-34.56-19.424-50.848 19.424-50.848 49.152-34.56 59.136-18.272 55.136-6.016q60 0 109.728 22.272l0-306.848-438.848 135.424 0 405.152q0 28.576-19.424 50.848t-49.152 34.56-59.136 18.272-55.136 6.016-55.136-6.016-59.136-18.272-49.152-34.56-19.424-50.848 19.424-50.848 49.152-34.56 59.136-18.272 55.136-6.016q60 0 109.728 22.272l0-552.576q0-17.728 10.848-32.288t28-20.288l475.424-146.272q6.848-2.272 16-2.272 22.848 0 38.848 16t16 38.848z"
@@ -126,7 +126,7 @@ function Spacejam() {
                   </span>
                   <select
                     value={selectedMusic}
-                    className="theme-select"
+                    className="theme-select px-4 py-2"
                     onChange={handleMusicChange}
                   >
                     <option value={0}>No Music Playing</option>
@@ -138,7 +138,7 @@ function Spacejam() {
                   </select>
                 </div>
 
-                <div className="mb-4 text-lg ">
+                <div className="mb-4 text-lg ml-1">
                   <span className="inline-block mr-2">
                     <svg
                       className="icon"
@@ -168,7 +168,7 @@ function Spacejam() {
                   />
                   <span className="text-white">degree</span>
                 </div>
-                <div className="mb-2 text-lg ">
+                <div className="mb-2 text-lg ml-1">
                   <span className="inline-block mr-2">
                     <svg
                       className="icon"
@@ -192,21 +192,29 @@ function Spacejam() {
                 </div>
               </div>
             </section>
-            <section className="block-section condition-section text-white">
-              <div className="condition-panel block-panel">
+            <section className="block-section loop-section text-white">
+              <div className="loop-panel block-panel">
                 <div className="header ">Loop</div>
-                <p className="mb-1 font-bold text-lg text-theme-blue">
-                  Condition
-                </p>
-                <p className="mb-4 text-lg">If Planet Cross String:</p>
-                <button
-                  className={`button-jam sm ${
+                <div className="mb-4 text-lg">
+                  Planet<div className="planet tiny planet-empty mx-2"></div>:
+                  Orbit around star
+                </div>
+
+                <div className="mb-4 text-lg condition-panel">
+                  <span className="mr-2 text-theme-blue condition">
+                    Condition:
+                  </span>
+                  <span>If Planet Cross <span style={{ color: "#da6e08" }}>String </span>:</span>
+                  <button
+                  className={`button-jam ml-3 sm ${
                     soundOn ? "purple" : "red opacity-70"
                   }`}
                   onClick={toggleSound}
                 >
                   {soundOn ? "Play Sound On" : "Play Sound Off"}
                 </button>
+                </div>
+
               </div>
             </section>
           </div>

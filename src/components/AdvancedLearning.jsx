@@ -5,7 +5,7 @@ function AdvancedLearning() {
   return (
     <section className="2xl:container 2xl:mx-auto mx-10 mb-36">
       <h1 className="text-3xl lg:text-5xl font-bold text-white text-gradient-1 mr-6 mb-3 lg:leading-relaxed">
-        Advanced Learning
+        Advanced Learning #2
       </h1>
       <div className="grid grid-cols-2">
         <div className="">
@@ -30,14 +30,13 @@ function AdvancedLearning() {
           </p>
 
           <h5 className="text-3xl font-bold text-white leading-relaxed">
-            3.Setting Orbit Time
+            3.Get Planet Position Angle
           </h5>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-8">
-            The orbit time of the planets is inputed by the user (whoever
-            playing this game)! For instance, if a planet has a rotation time of
-            3600 milliseconds, and 300 milliseconds has passed, we can calculate
-            its current rotation angle by dividing 300 by 3600. As a result,
-            current Angle θ = 30°
+            If a planet has a orbit time of
+            3600 milliseconds, and 300 milliseconds has passed since start, we can calculate
+            its current orbit angle by dividing 300 by 3600. As a result,
+            current Angle θ = 1/12 = 30° 
           </p>
 
           <h5 className="text-3xl font-bold text-white leading-relaxed">
