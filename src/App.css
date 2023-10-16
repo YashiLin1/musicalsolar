@@ -349,3 +349,12 @@ input[type='range']::-webkit-slider-thumb {
   box-shadow: 0 0 15px #538fff;
   margin-right: 2px;
 }
+
+
+
+#costheta{
+  color:red;
+}
+#sintheta{
+  color:blue;
+}

@@ -44,15 +44,14 @@ function LearnMore() {
           <h4 className="text-white text-4xl font-bold mb-5">What is Class?</h4>
 
           <p className="text-lg  font-light text-gray-200 mb-4">
-            Class serves as a blueprint for creating objects (instances) of that
-            class. In this musical solar system, Class Planet is designed to
+          Class Planet is the blueprint of creating planets! 
+                Planets are the instances (objects) of this class with different properties! <br></br>In this musical solar system, Class Planet is designed to
             orbit around the Sun. Each planet has its own properties (Name,
             Orbit, Orbit Time, Direction, and Start Degree) and can perform
             action of <span className="block-jam blue">Play Sound</span>.
           </p>
           <h6 className="text-theme-blue text-2xl mb-3">
-            A class is like a blueprint for creating objects (in this case,
-            planets).
+          A class is a template that defines the structure and behavior of objects.
           </h6>
         </div>
       </div>

@@ -9,6 +9,7 @@ import {
   challengeB,
   Orbit1091,
   Orbit923,
+  newset1,
 } from "./presets/planetSettings";
 import { backgroundMusic } from "./presets/bgm";
 
@@ -72,6 +73,7 @@ function Spacejam() {
     "Challenge B": challengeB,
     Orbit1091: Orbit1091,
     Orbit923: Orbit923,
+    newset1: newset1,
   };
 
   const handleApplyPreset = () => {
@@ -103,7 +105,7 @@ function Spacejam() {
            
             Click
             <img className="planet small sun mx-4" src="/image/Sun.jpg" />
-            in the middle to update the animation.
+            in the middle to re-run (update) the animation.
           </p>
         </div>
 
@@ -194,6 +196,7 @@ function Spacejam() {
                   <option value="Orbit923">Orbit 923</option>
                   <option value="Challenge A">Challenge A</option>
                   <option value="Challenge B">Challenge B</option>
+                  <option value="newset1">New Set 1</option>
                 </select>
               </span>
               <button
@@ -205,7 +208,7 @@ function Spacejam() {
             </div>
             {isEditMode ? (
               <div className="text-slate-300 mt-2 text-lg font-light">
-                Class Planet is the blueprint of creating planets!
+                A class is like a blueprint!
               </div>
             ) : null}
 
@@ -216,7 +219,7 @@ function Spacejam() {
                     <div className="orbit-tag text-slate-400">Orbit</div>
                     <div className="planet big planet-empty mb-6"></div>
                     <h4 className="text-xl font-bold mb-3 text-center text-white">
-                      Planet
+                    Class: Planet
                     </h4>
                     <div className="">
                       <div className="mx-auto w-fit text-slate-400 leading-7 ">

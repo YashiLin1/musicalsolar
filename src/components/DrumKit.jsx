@@ -80,8 +80,10 @@ const Keyboard = () => {
             Drum Kit
           </h1>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-14">
-            Drum sounds options! Press them
-            to hear the sound. <br></br>Get their corresponding <span className="block-jam blue">Play Sound</span> number on the planets!
+            Drum sounds options! Press them to hear the sound. <br></br>Get
+            their corresponding{" "}
+            <span className="block-jam blue">Play Sound</span> number on the
+            planets!
           </p>
           <div className="grid grid-cols-4 gap-5 max-w-4xl">
             {drumButtons.map((button, index) => (
@@ -98,11 +100,11 @@ const Keyboard = () => {
         </div>
         <div>
           <h1 className="text-5xl lg:text-7xl font-bold text-white text-gradient-1 mr-6 mb-3 leading-relaxed lg:leading-relaxed">
-          Counting Beats
+            Counting Beats
           </h1>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-8">
-            In music, notes represent different durations of time. For example, a
-            whole note lasts for 4 beats, a half note lasts for 2 beats, a
+            In music, notes represent different durations of time. For example,
+            a whole note lasts for 4 beats, a half note lasts for 2 beats, a
             quarter note lasts for 1 beat, and so on. If a planet orbit time
             4000 represent a whole note, the following sheet is reference.
           </p>
@@ -178,7 +180,7 @@ const Keyboard = () => {
                   <td className="text-center">500</td>
                 </tr>
                 <tr>
-                  <td className="text-center">Degree (Reference)</td>
+                  <td className="text-center">Start Degree (Reference)</td>
                   <td width={48}>
                     0°
                   </td>
@@ -208,6 +210,10 @@ const Keyboard = () => {
               </tbody>
             </table>
           </div>
+          <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-4">
+            <span className="font-bold text-gradient-1 text-2xl">Trick:</span>{" "}
+            You can create two Half Note sound with two Whole Note planets!
+          </p>
           <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-14">
             <span className="font-bold text-gradient-1 text-2xl">Quiz:</span>{" "}
             The minimum orbit time limit here is 900, how do you achieve a 500

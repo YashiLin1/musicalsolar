@@ -136,7 +136,7 @@ function Solar({
 
       if (
         degree > stringDegree &&
-        degree < stringDegree + 2.5 &&
+        degree < stringDegree + 2.8 &&
         soundOn &&
         planetSetting.drumNumber !== 0
       ) {
