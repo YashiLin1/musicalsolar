@@ -232,7 +232,7 @@
 }
 
 .display-board::before {
-  content: "";
+  /* content: "";
   background-image: url(/image/displayboard.png);
   background-size: cover;
   position: absolute;
@@ -241,7 +241,7 @@
   width: 100%;
   height: 100%;
   opacity: 0.3;
-  z-index: -1;
+  z-index: -1; */
 }
 
 .theme-select {

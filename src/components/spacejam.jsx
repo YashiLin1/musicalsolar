@@ -7,6 +7,7 @@ import {
   defaultSet,
   challengeA,
   challengeB,
+  challengeC,
   Orbit1091,
   Orbit923,
   newset1,
@@ -67,10 +68,11 @@ function Spacejam() {
 
   const presetSettings = {
     Default: defaultSet,
-    "Challenge A": challengeA,
-    "Challenge B": challengeB,
     Orbit1091: Orbit1091,
     Orbit923: Orbit923,
+    "Challenge A": challengeA,
+    "Challenge B": challengeB,
+    "Challenge C": challengeC,
     newset1: newset1,
     newset2: newset2,
     newset3: newset3,
@@ -240,6 +242,7 @@ function Spacejam() {
                   <option value="Orbit923">Orbit 923</option>
                   <option value="Challenge A">Challenge A</option>
                   <option value="Challenge B">Challenge B</option>
+                  <option value="Challenge C">Challenge C</option>
                   <option value="newset1">New Set 1</option>
                   <option value="newset2">New Set 2</option>
                   <option value="newset3">New Set 3</option>

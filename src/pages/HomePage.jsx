@@ -1,6 +1,7 @@
 import Spacejam from "../components/spacejam";
 import Keyboard from "../components/DrumKit";
 import Preview from "/video/Preview.mp4";
+import Challenges from "../components/Challenges"
 import Learning from "../components/Learning";
 import LearningObjectives from "../components/LearningObjectives"; 
 import AdvancedLearning from "../components/AdvancedLearning";
@@ -36,7 +37,7 @@ function HomePage() {
 
       <Spacejam />
       <Keyboard />
-      
+      <Challenges />
       <LearningObjectives />
       <Learning />
       <AdvancedLearning />
