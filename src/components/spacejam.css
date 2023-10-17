@@ -259,6 +259,12 @@
   border-radius: 0 10px 10px 10px;
 
   position: relative;
+  background: rgb(32,34,39);
+  background: -moz-linear-gradient(180deg, rgba(32,34,39,0.8981967787114846) 0%, rgba(15,15,17,0.7497373949579832) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(32,34,39,0.8981967787114846) 0%, rgba(15,15,17,0.7497373949579832) 100%);
+  background: linear-gradient(180deg, rgba(32,34,39,0.8981967787114846) 0%, rgba(15,15,17,0.7497373949579832) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202227",endColorstr="#0f0f11",GradientType=1);
+
 }
 
 .block-section {
