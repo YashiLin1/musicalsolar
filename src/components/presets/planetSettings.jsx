@@ -45,8 +45,8 @@ export const Orbit923 = [
 export const challengeA = [
   createSettings("Mercury", 1, 1400, 1, 0, 1),
   createSettings("Venus", 2, 1400, 1, 90, 5),
-  createSettings("Earth", 3, 1400, 1, 180, 21),
-  createSettings("Mars", 4, 2800, 1, 135, ),
+  createSettings("Earth", 3, 1400, 1, 180, 2),
+  createSettings("Mars", 4, 2800, 1, 135, 1),
   createSettings("Jupiter", 5, 4000, 1, 0, 0),
   createSettings("Saturn", 6, 4000, 1, 0, 0),
   createSettings("Uranus", 7, 4000, 1, 0, 0),

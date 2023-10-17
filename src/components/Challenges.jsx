@@ -184,14 +184,18 @@ function Challenges() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="text-center">450</td>
-                    <td className="text-center">450</td>
-                    <td className="text-center">450</td>
-                    <td className="text-center">450</td>
-                    <td className="text-center">450</td>
-                    <td className="text-center">450</td>
-                    <td className="text-center">450</td>
-                    <td className="text-center">450</td>
+                  <td className="text-center " colSpan="2">
+                      900
+                    </td>
+                    <td className="text-center " colSpan="2">
+                      900
+                    </td>
+                    <td className="text-center " colSpan="2">
+                      900
+                    </td>
+                    <td className="text-center " colSpan="2">
+                      900
+                    </td>
                   </tr>
                   <tr>
                     <td className="text-center">
