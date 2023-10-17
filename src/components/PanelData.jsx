@@ -1,6 +1,6 @@
 import React from "react";
 
-function DisplayRadian({ planetSettings, planetDegrees, planetRadians }) {
+function DisplayData({ planetSettings, planetDegrees, planetRadians }) {
   return (
  
         <table className="table-auto w-full text-center ">
@@ -35,4 +35,4 @@ function DisplayRadian({ planetSettings, planetDegrees, planetRadians }) {
   );
 }
 
-export default DisplayRadian;
+export default DisplayData;
