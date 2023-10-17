@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 import "./spacejam.css";
 import DisplayPanel from "./PanelData";
 import drumSounds from "./presets/drumSounds";
-import questionMarkIcon from "/icon/icon-question.svg";
+
+const gap = 49;
+const radius = 74; // radius of the orbit of the closest period
+const debounceDelay = 150;
+const lastPlayedTimestamps = {};
 
 function Solar({
   planetSettings,
@@ -11,33 +15,6 @@ function Solar({
   handleSunButtonClick,
   stringDegree,
 }) {
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-
-  const [gap, setGap] = useState(48);
-  const [radius, setRadius] = useState(74);
-  const debounceDelay = 150;
-  const lastPlayedTimestamps = {};
-
-  useEffect(() => {
-    function handleResize() {
-      setViewportWidth(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (viewportWidth < 768) {
-      setGap(25);
-      setRadius(55);
-    } else {
-      setGap(48);
-      setRadius(74);
-    }
-  }, [viewportWidth]);
-
   const [frameInterval, setframeInterval] = useState(0.05);
   const handleframeIntervalChange = (event) => {
     const newframeInterval = parseFloat(event.target.value);
@@ -237,20 +214,27 @@ function Solar({
       <div className=" mb-4 mt-4">
         <div className="display-board ">
           <div className="board-head mb-2 text-base flex justify-between">
-            <div className="text-white">Planets Monitor</div>
-            <div className=" text-gray-200 ">
-              Click
-              <div className="planet small sun mx-4 align-middle"></div>
-              in the middle to refresh animation!
-            </div>
+           <div className="text-white">Planets Monitor</div>
+          <div className=" text-gray-200 ">
+            Click
+            <div className="planet small sun mx-4 align-middle"></div>
+            in the middle to refresh animation!
+          </div>
             <div className=" ">
               <span className="inline-block mr-2">
-                <img
-                  src={questionMarkIcon}
-                  alt="Question Mark"
+                <svg
+                  className="icon"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
                   width="14"
                   height="14"
-                />
+                >
+                  <path
+                    d="M532.042 0C372.404 0 269.006 65.406 187.828 182.052c-14.726 21.16-10.186 50.172 10.356 65.748l86.276 65.418c20.746 15.73 50.264 12.052 66.506-8.296 50.098-62.762 87.26-98.898 165.514-98.898 61.528 0 137.632 39.598 137.632 99.262 0 45.104-37.234 68.268-97.986 102.328-70.846 39.72-164.598 89.152-164.598 212.81V640c0 26.51 21.49 48 48 48h144.942c26.51 0 48-21.49 48-48v-11.546c0-85.72 250.536-89.29 250.536-321.254C883.008 132.512 701.804 0 532.042 0zM512 746.918c-76.392 0-138.542 62.15-138.542 138.542 0 76.39 62.15 138.54 138.542 138.54s138.542-62.15 138.542-138.542-62.15-138.54-138.542-138.54z"
+                    fill="#5bba74"
+                  ></path>
+                </svg>
               </span>
               <span className="text-white ">Refresh Time (ms): </span>
               <input
