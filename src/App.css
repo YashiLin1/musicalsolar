@@ -204,8 +204,8 @@ button {
   border-radius: 5px;
 }
 .block-jam.blue {
-  border-color: #5468ff94;
-  background-color: #5468ff54;
+  border-color: #5490ff99;
+  background-color: #5490ff38;
 }
 .block-jam.red {
   border-color: #ff545429;
@@ -264,11 +264,16 @@ button {
   font-size: 16px;
 }
 
-.drum-number {
-  font-size: 18px;
+.drum-button .drum-number {
   position: absolute;
   top: 0;
   right: 0px;
+}
+.drum-number {
+  display: inline-block;
+  font-size: 16px;
+  width: 26px;
+  height: 26px;
   border-radius: 100%;
   background: rgb(84, 144, 255);
   background: -moz-linear-gradient(
@@ -287,8 +292,7 @@ button {
     rgba(91, 186, 116, 0.3) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5490ff",endColorstr="#5bba74",GradientType=1);
-  width: 30px;
-  height: 30px;
+
 }
 
 @keyframes move-twink-back {
@@ -348,14 +352,12 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .rhythm-table th {
-   
   padding: 12px 6px;
   border-right: 1px solid rgba(255, 255, 255, 0.164);
   border-bottom: 1px solid rgb(0, 27, 100);
 }
 .rhythm-table td {
-  
-  padding: 12px 0;
+  padding: 14px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.164);
   border-bottom: 1px solid rgb(0, 27, 100);
 }
@@ -363,34 +365,64 @@ input[type="range"]::-webkit-slider-thumb {
 .note {
   display: inline-block;
   border-radius: 100%;
-  width: 14px;
-  height: 14px;
-  background-color: #ffffffc5;
- 
+  width: 12px;
+  height: 12px;
+  background-color: #ffffffa1;
+
   margin-right: 2px;
 }
 
-.note.blue{
+.note.blue {
   background-color: #538fff;
   box-shadow: 0 0 15px #538fff;
 }
 
-.challenge-section table:hover .note.hover-blue{
+.challenge-section table:hover .note.hover-blue,
+.rhythm-table:hover .note.hover-blue {
   background-color: #538fff;
   box-shadow: 0 0 15px #538fff;
 }
 
-.challenge-section table:hover .hover-blue{
+.challenge-section table:hover .hover-blue,
+.rhythm-table:hover .hover-blue {
   color: #538fff;
 }
 
-.challenge-section table:hover .note.hover-orange{
+.challenge-section table:hover .note.hover-orange,
+.rhythm-table:hover .note.hover-orange {
   background-color: #ff7627;
   box-shadow: 0 0 15px #ff7627;
 }
 
-.challenge-section table:hover .hover-orange{
+.challenge-section table:hover .hover-orange,
+.rhythm-table:hover .hover-orange {
   color: #ff7627;
 }
 
- 
+.challenge-section table:hover .note.hover-green,
+.rhythm-table:hover .note.hover-green {
+  background-color: #5bba74;
+  box-shadow: 0 0 15px #5bba74;
+}
+
+.challenge-section table:hover .hover-green,
+.rhythm-table:hover .hover-green {
+  color: #5bba74;
+}
+
+.show-number {
+  margin-top: 36px;
+  text-align: center;
+  background: #5468ff42;
+  border-radius: 50%;
+  display: inline-block;
+  width: 108px;
+  font-size: 72px;
+  transition: all 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.show-number.hidden {
+  opacity: 0;
+  transform: scale(0.5);
+}

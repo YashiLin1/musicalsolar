@@ -85,7 +85,7 @@ function Spacejam() {
   };
 
   return (
-    <section className="2xl:container 2xl:mx-auto mx-10 grid grid-cols-1 xl:grid-cols-2 gap-16 my-24 z-10">
+    <section className="2xl:container 2xl:mx-auto mx-10 grid grid-cols-1 xl:grid-cols-2 gap-16 my-36 z-10">
       <div>
         <Solar
           planetSettings={planets}
@@ -95,23 +95,18 @@ function Spacejam() {
         />
       </div>
       <div>
-        <div className=" mb-14">
-          <h1 className="text-5xl xl:text-7xl font-bold text-white text-gradient-1 mb-4 leading-relaxed xl:leading-relaxed">
+        <div className=" mb-20">
+          <h1 className="text-5xl xl:text-7xl font-bold text-gradient-1 mb-4 leading-relaxed xl:leading-relaxed">
             Compose Your Beats!
           </h1>
-          <div className="text-xl font-light text-gray-200 max-w-3xl leading-[2.4rem] mb-20">
-            Click
-            <div className="planet small sun mx-4"></div>
-            to refresh animation!
-          </div>
         </div>
 
-        <div className=" mb-10">
-          <div className="grid md:grid-cols-2 gap-5">
+        <div className=" mb-14">
+          <div className="grid md:grid-cols-2 gap-8">
             <section className="block-section setup-section">
-              <div className="setup-panel block-panel ">
+              <div className="setup-panel block-panel py-5 lg:py-8 px-4 2xl:px-8">
                 <div className="header">Setup</div>
-                <div className="mb-4 text-lg ">
+                <div className="mb-4 ">
                   <span className="inline-block mr-2 align-middle">
                     <svg
                       className="icon"
@@ -141,7 +136,7 @@ function Spacejam() {
                   </select>
                 </div>
 
-                <div className="mb-4 text-lg ml-1">
+                <div className="mb-4 ml-1">
                   <span className="inline-block mr-2">
                     <svg
                       className="icon"
@@ -158,7 +153,7 @@ function Spacejam() {
                     </svg>
                   </span>
                   <span className="text-white">
-                    Draw <span style={{ color: "#da6e08" }}>String </span> at 
+                    Draw <span style={{ color: "#da6e08" }}>String </span> at
                   </span>
                   <input
                     className="inputNumber inputHuns mr-2"
@@ -171,7 +166,7 @@ function Spacejam() {
                   />
                   <span className="text-white">degree</span>
                 </div>
-                <div className="mb-2 text-lg ml-1">
+                <div className="mb-2 ml-1">
                   <span className="inline-block mr-2">
                     <svg
                       className="icon"
@@ -188,21 +183,25 @@ function Spacejam() {
                     </svg>
                   </span>
                   <span className="text-white">
-                    Draw Star <div className="planet tiny sun mx-1 align-middle"></div>
-                    and Planets <div className="planet tiny planet-empty mx-1 align-middle"></div>
+                    Draw Star{" "}
+                    <div className="planet tiny sun mx-1 align-middle"></div>
+                    and Planets{" "}
+                    <div className="planet tiny planet-empty mx-1 align-middle"></div>
                   </span>
                 </div>
               </div>
             </section>
             <section className="block-section loop-section text-white">
-              <div className="loop-panel block-panel">
+              <div className="loop-panel block-panel py-5 lg:py-8 px-4 2xl:px-8">
                 <div className="header ">Loop</div>
-                <div className="mb-4 text-lg leading-loose">
-                  Planets<div className="planet tiny planet-empty mx-2 align-middle"></div>
-                  Orbit around Star <div className="planet tiny sun mx-1 align-middle"></div>
+                <div className="mb-6 leading-loose">
+                  Planets
+                  <div className="planet tiny planet-empty mx-2 align-middle"></div>
+                  Orbit around Star{" "}
+                  <div className="planet tiny sun mx-1 align-middle"></div>
                 </div>
 
-                <div className="mb-4 text-lg condition-panel">
+                <div className=" condition-panel">
                   <span className="mr-2 text-theme-blue condition">
                     Condition:
                   </span>
@@ -225,7 +224,7 @@ function Spacejam() {
         </div>
 
         <section className="block-section class-section">
-          <div className="class-panel block-panel ">
+          <div className="class-panel block-panel py-5 lg:py-8 px-4 2xl:px-8">
             <div className="header">Class</div>
 
             <div className="float-right mb-4">
@@ -267,7 +266,7 @@ function Spacejam() {
             {isEditMode ? (
               <div className="edit-mode-A mb-8 clear-both grid grid-cols-2 md:grid-cols-4 gap-3">
                 <div className="panel mt-10 mb-3">
-                  <div className="planet-block pt-14 pb-6">
+                  <div className="planet-block pt-14 pb-6" style={{ backgroundColor: '#00000078' }}>
                     <div className="orbit-tag text-slate-400">Orbit</div>
                     <div className="planet big planet-empty mb-6"></div>
                     <h4 className="text-xl font-bold mb-3 text-center text-white">
@@ -343,7 +342,7 @@ function Spacejam() {
                 </div>
                 {planets.map((planet, index) => (
                   <div className="panel mt-10 mb-3" key={planet.name}>
-                    <div className="planet-block pt-14 pb-6">
+                    <div className="planet-block pt-14 pb-6" style={{ backgroundColor: '#00000078' }}>
                       <div className="orbit-tag">{`${planet.period}`}</div>
                       <div className={`${planet.name} planet big mb-3`}> </div>
                       <h4 className="text-xl font-bold mb-3 text-center text-white">
@@ -444,7 +443,7 @@ function Spacejam() {
               <div className="edit-mode-B mb-5 clear-both">
                 {planets.map((planet, index) => (
                   <div className="panel mb-1" key={planet.name}>
-                    <div className="planet-block p-4 pr-7">
+                    <div className="planet-block py-4 pr-7">
                       <div className="orbit-tag">{` ${planet.period}`}</div>
 
                       <div className="flex">
@@ -460,7 +459,9 @@ function Spacejam() {
                           <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
                             <div>
                               <div>
-                                <span className="text-slate-400 text-sm">Orbit Time</span>
+                                <span className="text-slate-400 text-sm">
+                                  Orbit Time
+                                </span>
                                 <input
                                   className="inputNumber inputThous"
                                   type="number"
@@ -493,7 +494,9 @@ function Spacejam() {
                             </div>
                             <div>
                               <div>
-                              <span className="text-slate-400 text-sm">Direction</span>
+                                <span className="text-slate-400 text-sm">
+                                  Direction
+                                </span>
                                 <input
                                   className="inputNumber inputOnes"
                                   type="number"
@@ -525,7 +528,9 @@ function Spacejam() {
                             </div>
                             <div>
                               <div>
-                                <span className="text-slate-400 text-sm">Degree</span>
+                                <span className="text-slate-400 text-sm">
+                                  Degree
+                                </span>
                                 <input
                                   className="inputNumber inputHuns"
                                   type="number"
@@ -564,7 +569,9 @@ function Spacejam() {
                               }`}
                             >
                               <div className="inline-block">
-                                <span className="text-slate-400 text-sm">Play Sound</span>
+                                <span className="text-slate-400 text-sm">
+                                  Play Sound
+                                </span>
                                 <input
                                   className="inputNumber inputOnes"
                                   type="number"
@@ -623,10 +630,12 @@ function Spacejam() {
                 <button
                   className={`button-jam  md yellow `}
                   onClick={handleSunButtonClick}
-                > Refresh Animation
+                >
+                  {" "}
+                  Refresh Animation
                   <div className="planet small sun mx-4"></div>
                 </button>
-                 </div>
+              </div>
             ) : (
               <div className="mb-4 flex justify-between ">
                 <button
@@ -638,7 +647,9 @@ function Spacejam() {
                 <button
                   className={`button-jam md yellow `}
                   onClick={handleSunButtonClick}
-                > Refresh Animation
+                >
+                  {" "}
+                  Refresh Animation
                   <div className="planet small sun mx-4"></div>
                 </button>
               </div>

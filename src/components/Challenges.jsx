@@ -22,10 +22,10 @@ function Challenges() {
       <h1 className="text-7xl lg:text-8xl font-bold text-white text-gradient-1 mr-6 mb-16 lg:leading-relaxed">
         Recreate these beats!
       </h1>
-      <img className="logo-img mb-6" src="/image/neroart.png" />
+      <img className="logo-img mb-12 " src="/image/neroart.png" />
 
-      <div className="grid lg:grid-cols-3 gap-10">
-        <div className="">
+      <div className="grid xl:grid-cols-3 gap-10  ">
+        <div className="max-w-3xl">
           <video controls className="video-panel mx-auto">
             <source src={ChallengeAVid} type="video/mp4" />
             Your browser does not support the video tag.
@@ -36,20 +36,19 @@ function Challenges() {
                 className={`button-jam md border mr-4`}
                 onClick={handleAClick}
               >
-                Close Tips
+                Hide Rhythm
               </button>
             ) : (
               <button
                 className={`button-jam md blue mr-4`}
                 onClick={handleAClick}
               >
-                View Tips
+                View Rhythm 
               </button>
             )}
           </div>
           {showTableA && (
             <div>
-              
               <table className="table-auto w-full text-white rhythm-table mb-5">
                 <tbody>
                   <tr>
@@ -70,22 +69,43 @@ function Challenges() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="text-center ">Ride cymbal</td>
-                    <td width={48}>
+                    <td className="text-center ">
+                      <span className="drum-number mr-2">4</span>Ride cymbal
+                    </td>
+                    <td width={43}>
                       <span className="note hover-blue"></span>
                     </td>
-                    <td width={48}></td>
-                    <td width={48}></td>
-                    <td width={48}></td>
-                    <td width={48}>
+                    <td width={43}></td>
+                    <td width={43}></td>
+                    <td width={43}></td>
+                    <td width={43}>
                       <span className="note hover-blue"></span>
                     </td>
-                    <td width={48}></td>
-                    <td width={48}></td>
-                    <td width={48}></td>
+                    <td width={43}></td>
+                    <td width={43}></td>
+                    <td width={43}></td>
                   </tr>
                   <tr>
-                    <td className="text-center ">Kick</td>
+                    <td className="text-center ">
+                      <span className="drum-number mr-2">5</span>High Hat 1
+                    </td>
+                    <td></td>
+                    <td>
+                      <span className="note hover-blue"></span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <span className="note hover-blue"></span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td className="text-center ">
+                      <span className="drum-number mr-2">1</span>Kick
+                    </td>
                     <td>
                       <span className="note hover-blue"></span>
                     </td>
@@ -101,23 +121,11 @@ function Challenges() {
                     <td></td>
                     <td></td>
                   </tr>
+
                   <tr>
-                    <td className="text-center ">High Hat 1</td>
-                    <td></td>
-                    <td>
-                      <span className="note hover-blue"></span>
+                    <td className="text-center ">
+                      <span className="drum-number mr-2">2</span>Snare
                     </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td className="text-center ">Snare</td>
                     <td></td>
                     <td></td>
                     <td>
@@ -133,12 +141,24 @@ function Challenges() {
                   </tr>
                 </tbody>
               </table>
-              <div className="text-center text-white">Not all the beats are in the same speed of loop!</div>
+
+              <div className="text-xl text-gray-200 max-w-3xl leading-[2rem] my-12">
+                <span className="text-center font-bold text-theme-blue text-2xl">
+                  Challenge:
+                </span>{" "}
+                Only use 5 planets!
+              </div>
+              <div className="text-xl text-gray-400">
+                <span className="text-center font-bold text-theme-blue text-2xl">
+                  Tips:
+                </span>{" "}
+                Not all the beats are in the same duration of loop!
+              </div>
             </div>
           )}
         </div>
 
-        <div className="">
+        <div className="max-w-3xl">
           <video controls className="video-panel mx-auto">
             <source src={ChallengeBVid} type="video/mp4" />
             Your browser does not support the video tag.
@@ -149,14 +169,14 @@ function Challenges() {
                 className={`button-jam md border mr-4`}
                 onClick={handleBClick}
               >
-                Close Tips
+                Hide Rhythm
               </button>
             ) : (
               <button
                 className={`button-jam md blue mr-4`}
                 onClick={handleBClick}
               >
-                View Tips
+                View Rhythm
               </button>
             )}
           </div>
@@ -191,34 +211,38 @@ function Challenges() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="text-center ">Kick</td>
-                    <td>
+                    <td className="text-center ">
+                      <span className="drum-number mr-2">1</span>Kick
+                    </td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
                   </tr>
                   <tr>
-                    <td className="text-center ">Crash Cymbal</td>
+                    <td className="text-center ">
+                      <span className="drum-number mr-2">8</span>Crash Cymbal
+                    </td>
                     <td>
                       <span className="note hover-blue"></span>
                     </td>
@@ -237,7 +261,9 @@ function Challenges() {
                     <td></td>
                   </tr>
                   <tr>
-                    <td className="text-center text-center  ">Ride Cymbal</td>
+                    <td className="text-center text-center  ">
+                      <span className="drum-number mr-2">4</span>Ride Cymbal
+                    </td>
                     <td className="text-center">
                       <span className="note hover-blue"></span>
                     </td>
@@ -257,7 +283,9 @@ function Challenges() {
                   </tr>
 
                   <tr>
-                    <td className="text-center ">Snare</td>
+                    <td className="text-center ">
+                      <span className="drum-number mr-2">2</span>Snare
+                    </td>
                     <td></td>
                     <td className="text-center ">
                       <span className="note hover-orange"></span>
@@ -273,11 +301,25 @@ function Challenges() {
                   </tr>
                 </tbody>
               </table>
-              <div className="text-center text-white">You create two 1200 orbit-time planets with degree 0 and 180 to achieve beats in 600 orbit time!</div>
+              <div className="text-center text-white"></div>
+
+              <div className="text-xl text-gray-200 max-w-3xl leading-[2rem] my-12">
+                <span className="text-center font-bold text-theme-blue text-2xl">
+                  Challenge:
+                </span>{" "}
+                Only allow Orbit Time of 1200 and 2400.
+              </div>
+              <div className="text-xl text-gray-400">
+                <span className="text-center font-bold text-theme-blue text-2xl">
+                  Tips:
+                </span>{" "}
+                Two 1200 orbit-time planets with degree 0 and 180 can achieve
+                beats in 600 orbit time!
+              </div>
             </div>
           )}
         </div>
-        <div className="">
+        <div className="max-w-3xl">
           <video controls className="video-panel mx-auto">
             <source src={ChallengeCVid} type="video/mp4" />
             Your browser does not support the video tag.
@@ -288,14 +330,14 @@ function Challenges() {
                 className={`button-jam md border mr-4`}
                 onClick={handleCClick}
               >
-                Close Tips
+                Hide Rhythm
               </button>
             ) : (
               <button
                 className={`button-jam md blue mr-4`}
                 onClick={handleCClick}
               >
-                View Tips
+                View Rhythm
               </button>
             )}
           </div>
@@ -334,34 +376,38 @@ function Challenges() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="text-center">High Hat 1</td>
-                    <td>
+                    <td className="text-center">
+                      <span className="drum-number mr-2">5</span>High Hat 1
+                    </td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
-                    <td>
+                    <td width={43}>
                       <span className="note"></span>
                     </td>
                   </tr>
                   <tr>
-                    <td className="text-center">Kick</td>
+                    <td className="text-center">
+                      <span className="drum-number mr-2">1</span>Kick
+                    </td>
                     <td>
                       <span className="note hover-blue"></span>
                     </td>
@@ -380,7 +426,9 @@ function Challenges() {
                     <td></td>
                   </tr>
                   <tr>
-                    <td className="text-center">Snare</td>
+                    <td className="text-center">
+                      <span className="drum-number mr-2">2</span>Snare
+                    </td>
                     <td></td>
                     <td></td>
                     <td>
@@ -398,8 +446,11 @@ function Challenges() {
                   </tr>
                 </tbody>
               </table>
-              <div className="text-center text-white">
-                It&apos;s important to identify the beat in different speed of loop.
+              <div className="text-xl text-gray-200 max-w-3xl leading-[2rem] my-12">
+                If you can re-create this...
+                <span className="text-center font-bold text-theme-blue text-2xl">
+                  You&apos;re awsome!
+                </span>{" "}
               </div>
             </div>
           )}

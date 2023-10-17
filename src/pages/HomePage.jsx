@@ -20,8 +20,7 @@ function HomePage() {
             </h1>
             <img className="logo-img mb-12" src="/image/neroart.png" />
             <p className="text-xl font-light text-gray-200 max-w-3xl mb-32 leading-[2.4rem]">
-              Program planets to create your own musical solar system! Explore the logic, discover the pattern and
-              re-create the beats from the challenge videos!
+              Program planets to create your own musical solar system! <br></br>Explore the logic, discover the pattern, complete challenges and learn <span className="font-bold text-gradient-1">Computer Science</span>!
             </p>
           </div>
           <div className="max-w-[1920px] ">

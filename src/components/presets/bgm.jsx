@@ -1,7 +1,7 @@
 export const backgroundMusic = [
     {
       value: 1,
-      label: "Music for Orbit Time 1091",
+      label: "Play Music for Orbit Time 1091",
       soundPath: "/music/Funky-Soul-Disco-Drumless-1095.mp3",
     },
     {

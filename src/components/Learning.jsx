@@ -4,12 +4,12 @@ function Learning() {
   return (
     <section className="2xl:container 2xl:mx-auto mx-10 mb-36">
       <h1 className="text-3xl lg:text-5xl font-bold text-white text-gradient-1 mr-6 mb-12 lg:leading-relaxed">
-         Learning 
+         Learn More
       </h1>
        
 
       <div className="grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 xl:gap-16">
-        <div className="learn-board py-8 px-6 mb-4">
+        <div className="learn-board  py-8 px-6 mb-4">
           <h4 className="text-white text-4xl font-bold mb-5">
             <span className="inline-block mr-2">
               <svg

@@ -257,7 +257,7 @@
 .block-panel {
   border: 1px solid black;
   border-radius: 0 10px 10px 10px;
-  padding: 14px 23px;
+
   position: relative;
 }
 
@@ -317,7 +317,7 @@
 
 .loop-panel {
   height: 100%;
-  background-color: #39393940;
+  background-color: #121212bf;
 }
 
 .loop-section .header {
@@ -342,7 +342,7 @@
   border-radius: 14px;
 }
 .setup-panel {
-  background-color: #39393940;
+  background-color: #121212bf;
 }
 
 .setup-section .header {
@@ -350,7 +350,7 @@
 }
 
 .class-panel {
-  background-color: #39393940;
+  background-color: #121212bf;
 }
 
 .class-section .header {
