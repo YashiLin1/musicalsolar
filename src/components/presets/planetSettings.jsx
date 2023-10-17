@@ -44,26 +44,15 @@ export const Orbit923 = [
 
 export const challengeA = [
   createSettings("Mercury", 1, 1400, 1, 0, 1),
-  createSettings("Venus", 2, 1400, 1, 180, 2),
-  createSettings("Earth", 3, 2800, 1, 135, 1),
-  createSettings("Mars", 4, 1400, 1, 0, 4),
-  createSettings("Jupiter", 5, 1400, 1, 90, 5),
+  createSettings("Venus", 2, 1400, 1, 90, 5),
+  createSettings("Earth", 3, 1400, 1, 180, 21),
+  createSettings("Mars", 4, 2800, 1, 135, ),
+  createSettings("Jupiter", 5, 4000, 1, 0, 0),
   createSettings("Saturn", 6, 4000, 1, 0, 0),
   createSettings("Uranus", 7, 4000, 1, 0, 0),
 ];
 
 export const challengeB = [
-  createSettings("Mercury", 1, 1200, 1, 0, 1),
-  createSettings("Venus", 2, 1200, 1, 180, 1),
-  createSettings("Earth", 3, 1200, 1, 80, 4),
-  createSettings("Mars", 4, 2400, 1, 130, 2),
-  createSettings("Jupiter", 5, 1200, 1, 0, 3),
-  createSettings("Saturn", 6, 1200, 1, 270, 5),
-  createSettings("Uranus", 7, 4800, 1, 335, 7),
-];
-
-
-export const challengeC = [
   createSettings("Mercury", 1, 900, 1, 180, 5),
   createSettings("Venus", 2, 900, 1, 0, 5),
   createSettings("Earth", 3, 1800, 1, 0, 1),
@@ -71,6 +60,19 @@ export const challengeC = [
   createSettings("Jupiter", 5, 3600, 1, 200, 2),
   createSettings("Saturn", 6, 3600, 1, 245, 1),
   createSettings("Uranus", 7, 3600, 1, 290, 1),
+];
+
+
+export const challengeC = [
+
+
+  createSettings("Mercury", 1, 900, 1, 0, 1),
+  createSettings("Venus", 2, 900, 1, 180, 1),
+  createSettings("Earth", 3, 900, 1, 80, 4),
+  createSettings("Mars", 4, 1800, 1, 130, 2),
+  createSettings("Jupiter", 5, 1800, 1, 310, 5),
+  createSettings("Saturn", 6, 3600, 1, 335, 3),
+  createSettings("Uranus", 7, 4000, 1, 0, 0),
 ];
 export const newset1 = [
   createSettings("Mercury", 1, 1000, 1, 0, 0),

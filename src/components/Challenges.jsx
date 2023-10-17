@@ -43,7 +43,7 @@ function Challenges() {
                 className={`button-jam md blue mr-4`}
                 onClick={handleAClick}
               >
-                View Rhythm 
+                View Rhythm
               </button>
             )}
           </div>
@@ -70,14 +70,16 @@ function Challenges() {
                   </tr>
                   <tr>
                     <td className="text-center ">
-                      <span className="drum-number mr-2">4</span>Ride cymbal
+                      <span className="drum-number mr-2">1</span>Kick
                     </td>
                     <td width={43}>
                       <span className="note hover-blue"></span>
                     </td>
                     <td width={43}></td>
                     <td width={43}></td>
-                    <td width={43}></td>
+                    <td width={43}>
+                      <span className="note hover-orange"></span>
+                    </td>
                     <td width={43}>
                       <span className="note hover-blue"></span>
                     </td>
@@ -99,25 +101,6 @@ function Challenges() {
                     <td>
                       <span className="note hover-blue"></span>
                     </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td className="text-center ">
-                      <span className="drum-number mr-2">1</span>Kick
-                    </td>
-                    <td>
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                      <span className="note hover-orange"></span>
-                    </td>
-                    <td>
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
                     <td></td>
                     <td></td>
                   </tr>
@@ -146,7 +129,7 @@ function Challenges() {
                 <span className="text-center font-bold text-theme-blue text-2xl">
                   Challenge:
                 </span>{" "}
-                Only use 5 planets!
+                Only use 4 planets!
               </div>
               <div className="text-xl text-gray-400">
                 <span className="text-center font-bold text-theme-blue text-2xl">
@@ -185,167 +168,6 @@ function Challenges() {
               <table className="table-auto w-full text-white rhythm-table mb-5">
                 <tbody>
                   <tr>
-                    <td className="text-center" rowSpan="2">
-                      Orbit Time
-                    </td>
-                    <td className="text-center hover-orange" colSpan="4">
-                      2400
-                    </td>
-                    <td className="text-center hover-orange" colSpan="4">
-                      2400
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td className="text-center hover-blue" colSpan="2">
-                      1200
-                    </td>
-                    <td className="text-center hover-blue" colSpan="2">
-                      1200
-                    </td>
-                    <td className="text-center hover-blue" colSpan="2">
-                      1200
-                    </td>
-                    <td className="text-center hover-blue" colSpan="2">
-                      1200
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="text-center ">
-                      <span className="drum-number mr-2">1</span>Kick
-                    </td>
-                    <td width={43}>
-                      <span className="note"></span>
-                    </td>
-                    <td width={43}>
-                      <span className="note"></span>
-                    </td>
-                    <td width={43}>
-                      <span className="note"></span>
-                    </td>
-                    <td width={43}>
-                      <span className="note"></span>
-                    </td>
-                    <td width={43}>
-                      <span className="note"></span>
-                    </td>
-                    <td width={43}>
-                      <span className="note"></span>
-                    </td>
-                    <td width={43}>
-                      <span className="note"></span>
-                    </td>
-                    <td width={43}>
-                      <span className="note"></span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="text-center ">
-                      <span className="drum-number mr-2">8</span>Crash Cymbal
-                    </td>
-                    <td>
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                    <td>
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                    <td>
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                    <td>
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td className="text-center text-center  ">
-                      <span className="drum-number mr-2">4</span>Ride Cymbal
-                    </td>
-                    <td className="text-center">
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                    <td className="text-center">
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                    <td className="text-center">
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                    <td className="text-center">
-                      <span className="note hover-blue"></span>
-                    </td>
-                    <td></td>
-                  </tr>
-
-                  <tr>
-                    <td className="text-center ">
-                      <span className="drum-number mr-2">2</span>Snare
-                    </td>
-                    <td></td>
-                    <td className="text-center ">
-                      <span className="note hover-orange"></span>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td className="text-center ">
-                      <span className="note hover-orange"></span>
-                    </td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <div className="text-center text-white"></div>
-
-              <div className="text-xl text-gray-200 max-w-3xl leading-[2rem] my-12">
-                <span className="text-center font-bold text-theme-blue text-2xl">
-                  Challenge:
-                </span>{" "}
-                Only allow Orbit Time of 1200 and 2400.
-              </div>
-              <div className="text-xl text-gray-400">
-                <span className="text-center font-bold text-theme-blue text-2xl">
-                  Tips:
-                </span>{" "}
-                Two 1200 orbit-time planets with degree 0 and 180 can achieve
-                beats in 600 orbit time!
-              </div>
-            </div>
-          )}
-        </div>
-        <div className="max-w-3xl">
-          <video controls className="video-panel mx-auto">
-            <source src={ChallengeCVid} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div className="text-center p-12">
-            {showTableC ? (
-              <button
-                className={`button-jam md border mr-4`}
-                onClick={handleCClick}
-              >
-                Hide Rhythm
-              </button>
-            ) : (
-              <button
-                className={`button-jam md blue mr-4`}
-                onClick={handleCClick}
-              >
-                View Rhythm
-              </button>
-            )}
-          </div>
-          {showTableC && (
-            <div>
-              <table className="table-auto w-full text-white rhythm-table mb-5">
-                <tbody>
-                  <tr>
                     <td className="text-center" rowSpan="3">
                       Orbit Time
                     </td>
@@ -362,18 +184,14 @@ function Challenges() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="text-center" colSpan="2">
-                      900
-                    </td>
-                    <td className="text-center" colSpan="2">
-                      900
-                    </td>
-                    <td className="text-center" colSpan="2">
-                      900
-                    </td>
-                    <td className="text-center" colSpan="2">
-                      900
-                    </td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
                   </tr>
                   <tr>
                     <td className="text-center">
@@ -446,12 +264,191 @@ function Challenges() {
                   </tr>
                 </tbody>
               </table>
+              <div className="text-center text-white"></div>
+
               <div className="text-xl text-gray-200 max-w-3xl leading-[2rem] my-12">
-                If you can re-create this...
                 <span className="text-center font-bold text-theme-blue text-2xl">
-                  You&apos;re awsome!
+                  Challenge:
                 </span>{" "}
+                Only allow Orbit Time of 1800 and 3600.
               </div>
+              <div className="text-xl text-gray-400">
+                <span className="text-center font-bold text-theme-blue text-2xl">
+                  Tips:
+                </span>{" "}
+                Two 900 orbit-time planets with degree 0 and 180 can achieve
+                beats in 450 orbit time!
+              </div>
+            </div>
+          )}
+        </div>
+        <div className="max-w-3xl">
+          <video controls className="video-panel mx-auto">
+            <source src={ChallengeCVid} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="text-center p-12">
+            {showTableC ? (
+              <button
+                className={`button-jam md border mr-4`}
+                onClick={handleCClick}
+              >
+                Hide Rhythm
+              </button>
+            ) : (
+              <button
+                className={`button-jam md blue mr-4`}
+                onClick={handleCClick}
+              >
+                View Rhythm
+              </button>
+            )}
+          </div>
+          {showTableC && (
+            <div>
+              <table className="table-auto w-full text-white rhythm-table mb-5">
+                <tbody>
+                  <tr>
+                    <td className="text-center" rowSpan="4">
+                      Orbit Time
+                    </td>
+                    <td className="text-center hover-orange" colSpan="8">
+                      3600
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="text-center hover-blue" colSpan="4">
+                      1800
+                    </td>
+                    <td className="text-center hover-blue" colSpan="4">
+                      1800
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="text-center hover-green" colSpan="2">
+                      900
+                    </td>
+                    <td className="text-center hover-green" colSpan="2">
+                      900
+                    </td>
+                    <td className="text-center hover-green" colSpan="2">
+                      900
+                    </td>
+                    <td className="text-center hover-green" colSpan="2">
+                      900
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                    <td className="text-center">450</td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <span className="drum-number mr-2">1</span>Kick
+                    </td>
+                    <td width={43}>
+                      <span className="note"></span>
+                    </td>
+                    <td width={43}>
+                      <span className="note"></span>
+                    </td>
+                    <td width={43}>
+                      <span className="note"></span>
+                    </td>
+                    <td width={43}>
+                      <span className="note"></span>
+                    </td>
+                    <td width={43}>
+                      <span className="note"></span>
+                    </td>
+                    <td width={43}>
+                      <span className="note"></span>
+                    </td>
+                    <td width={43}>
+                      <span className="note"></span>
+                    </td>
+                    <td width={43}>
+                      <span className="note"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <span className="drum-number mr-2">4</span>Ride cymbal
+                    </td>
+                    <td className="text-center">
+                      <span className="note hover-green "></span>
+                    </td>
+                    <td></td>
+                    <td className="text-center">
+                      <span className="note hover-green "></span>
+                    </td>
+                    <td></td>
+                    <td className="text-center">
+                      <span className="note hover-green "></span>
+                    </td>
+                    <td></td>
+                    <td className="text-center">
+                      <span className="note hover-green"></span>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <span className="drum-number mr-2">2</span>Snare
+                    </td>
+                    <td></td>
+                    <td className="text-center">
+                      <span className="note hover-blue"></span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td className="text-center">
+                      <span className="note hover-blue"></span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <span className="drum-number mr-2">5</span>High hat 1
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td className="text-center">
+                      <span className="note hover-blue"></span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td className="text-center">
+                      <span className="note hover-blue"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="text-center">
+                      <span className="drum-number mr-2">3</span>Crash cymbal
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td className="text-center">
+                      <span className="note hover-orange"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           )}
         </div>
