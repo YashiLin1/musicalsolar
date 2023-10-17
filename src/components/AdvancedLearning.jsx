@@ -47,7 +47,7 @@ function AdvancedLearning() {
             right triangle, we can use the Sine and Cosine Functions to
             calculate the calculate the x and y positions of a planet (x,y)!
           </p>
-
+          <div className="mb-5"><a href="https://conwayjw97.github.io/Trig-Assist/" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-slate-700 text-white rounded-md hover:bg-blue-600">Learn Trigonometry</a></div>
           <h5 className="text-3xl font-bold text-white leading-relaxed">
             5.Animation
           </h5>

@@ -22,7 +22,7 @@ function Learning() {
             </span>{" "}
              Refresh Time 
           </h4>
-          <p className="text-lg  font-light text-gray-200 mb-4">
+          <p className="text-xl leading-relaxed font-light text-gray-200 mb-4">
             Refresh Time is the time duration between the display of individual
             frames in an animation sequence. Refresh Time = 0.05 milliseconds
             means the image updates every 0.05 milliseconds, which also means
@@ -33,7 +33,9 @@ function Learning() {
             Set Refresh Time to 130 ms, click <div className="planet small sun mx-4"></div> to update, see what happens!
           </h6>
         </div>
- 
+        <div className="col-span-2">
+          <img src="/image/Trig.png"/>
+        </div>
       </div>
     </section>
   );
