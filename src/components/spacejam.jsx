@@ -251,7 +251,7 @@ function Spacejam() {
 
             {isEditMode ? (
               <div className="edit-mode-A mb-8 clear-both grid grid-cols-2 md:grid-cols-4 ">
-                <div className="panel  mt-14  mb-3">
+                <div className="panel mt-20 mb-3">
                   <div className="planet-block ">
                     <div className="orbit-tag text-theme-blue">Orbit</div>
                     <div className="planet big planet-empty mb-6"></div>
@@ -306,7 +306,7 @@ function Spacejam() {
                   </div>
                 </div>
                 {planets.map((planet, index) => (
-                  <div className="panel mt-14 mb-3" key={planet.name}>
+                  <div className="panel mt-20 mb-3" key={planet.name}>
                     <div className="planet-block ">
                       <div className="orbit-tag text-theme-blue">{`${planet.period}`}</div>
                       <div className={`${planet.name} planet big mb-3`}> </div>
@@ -385,7 +385,7 @@ function Spacejam() {
               <div className="edit-mode-B mb-5 clear-both">
                 {planets.map((planet, index) => (
                   <div className="panel mb-1" key={planet.name}>
-                    <div className="planet-block py-3 ">
+                    <div className="planet-block ">
                       <div className="orbit-tag">{` ${planet.period}`}</div>
 
                       <div className="flex">
