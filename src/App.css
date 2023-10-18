@@ -56,10 +56,9 @@ button {
 
 .video-panel {
   border-radius: 24px;
-  border: 3px solid #2b64ff70;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.199);
+  /* border: 3px solid #2b64ff70; */
+  box-shadow: 0 0 40px rgb(69 120 223 / 31%);
 }
-
 .text-gradient-1 {
   display: inline-block;
   background: rgb(84, 144, 255);

@@ -4,7 +4,7 @@ function Learning() {
   return (
     <section className="2xl:container 2xl:mx-auto mx-10 mb-36">
       <h1 className="text-3xl lg:text-5xl font-bold text-white text-gradient-1 mr-6 mb-12 lg:leading-relaxed">
-         How animation work?
+      How does animation work?
       </h1>
        
 

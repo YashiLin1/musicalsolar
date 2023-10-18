@@ -156,7 +156,7 @@
 }
 
 .planet-empty {
-  background-color: #0e0e0e;
+  
   border: 2px solid rgb(84 144 255);
 }
 .Mercury {
@@ -302,23 +302,11 @@
 }
 
 .block-panel:hover .header {
-  background: rgb(84, 144, 255);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(84, 144, 255, 1) 19%,
-    rgba(91, 186, 116, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(84, 144, 255, 1) 19%,
-    rgba(91, 186, 116, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(84, 144, 255, 1) 19%,
-    rgba(91, 186, 116, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5490ff",endColorstr="#5bba74",GradientType=1);
+  background: rgb(84,144,255);
+  background: -moz-linear-gradient(90deg, rgba(84,144,255,1) 0%, rgba(80,195,171,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(84,144,255,1) 0%, rgba(80,195,171,1) 100%);
+  background: linear-gradient(90deg, rgba(84,144,255,1) 0%, rgba(80,195,171,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5490ff",endColorstr="#50c3ab",GradientType=1);
 }
 
 .loop-panel {

@@ -197,7 +197,7 @@ function Spacejam() {
                   </span>
                   <button
                     className={`button-jam ml-3 sm ${
-                      soundOn ? "purple" : "red opacity-50"
+                      soundOn ? "purple" : "red opacity-80"
                     }`}
                     onClick={toggleSound}
                   >
