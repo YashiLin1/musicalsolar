@@ -125,7 +125,7 @@ function Challenges() {
                 </tbody>
               </table>
 
-              <div className="text-xl text-gray-200 max-w-3xl leading-[2rem] my-12">
+              <div className="text-xl text-gray-200 max-w-3xl leading-[2rem] my-8">
                 <span className="text-center font-bold text-theme-blue text-2xl">
                   Challenge:
                 </span>{" "}
@@ -270,7 +270,7 @@ function Challenges() {
               </table>
               <div className="text-center text-white"></div>
 
-              <div className="text-xl text-gray-200 max-w-3xl leading-[2rem] my-12">
+              <div className="text-xl text-gray-200 max-w-3xl leading-[2rem] my-8">
                 <span className="text-center font-bold text-theme-blue text-2xl">
                   Challenge:
                 </span>{" "}

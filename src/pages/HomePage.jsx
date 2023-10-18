@@ -1,5 +1,5 @@
 import Spacejam from "../components/spacejam";
-import Keyboard from "../components/DrumKit";
+import Toolkits from "../components/Toolkits";
 import Preview from "/video/Preview.mp4";
 import Challenges from "../components/Challenges";
 import Learning from "../components/Learning";
@@ -41,9 +41,8 @@ function HomePage() {
       </section>
 
       <Spacejam />
-      <Keyboard />
+      <Toolkits />
       <Challenges />
-
       <LearningObjectives />
       <LearnInterface />
       <Learning />

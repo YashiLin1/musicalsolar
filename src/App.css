@@ -292,7 +292,6 @@ button {
     rgba(91, 186, 116, 0.3) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5490ff",endColorstr="#5bba74",GradientType=1);
-
 }
 
 @keyframes move-twink-back {
@@ -357,9 +356,15 @@ input[type="range"]::-webkit-slider-thumb {
   border-bottom: 1px solid rgb(0, 27, 100);
 }
 .rhythm-table td {
-  padding: 14px 0;
+ 
   border-right: 1px solid rgba(255, 255, 255, 0.164);
   border-bottom: 1px solid rgb(0, 27, 100);
+}
+.toolkits-section .rhythm-table td {
+  padding: 19px 0;
+}
+.challenge-section .rhythm-table td {
+  padding: 10px 0;
 }
 
 .note {
