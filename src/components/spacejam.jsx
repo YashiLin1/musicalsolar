@@ -197,7 +197,7 @@ function Spacejam() {
                   </span>
                   <button
                     className={`button-jam ml-3 sm ${
-                      soundOn ? "purple" : "red opacity-70"
+                      soundOn ? "purple" : "red opacity-50"
                     }`}
                     onClick={toggleSound}
                   >
@@ -250,19 +250,16 @@ function Spacejam() {
             )}
 
             {isEditMode ? (
-              <div className="edit-mode-A mb-8 clear-both grid grid-cols-2 md:grid-cols-4 gap-3">
-                <div className="panel mt-10 mb-3">
-                  <div
-                    className="planet-block pt-14 pb-6"
-                    style={{ backgroundColor: "#00000078" }}
-                  >
-                    <div className="orbit-tag text-slate-400">Orbit</div>
+              <div className="edit-mode-A mb-8 clear-both grid grid-cols-2 md:grid-cols-4 ">
+                <div className="panel  mt-14  mb-3">
+                  <div className="planet-block ">
+                    <div className="orbit-tag text-theme-blue">Orbit</div>
                     <div className="planet big planet-empty mb-6"></div>
                     <h4 className="text-xl font-bold mb-3 text-center text-white">
                       Class: Planet
                     </h4>
-                    <div className="">
-                      <div className="mx-auto w-fit text-slate-400 leading-7 ">
+                    <div className="leading-7 text-base">
+                      <div className="mx-auto w-fit text-slate-400 ">
                         <div>
                           <img
                             className="inline-block mr-2"
@@ -276,16 +273,6 @@ function Spacejam() {
                         <div>
                           <img
                             className="inline-block mr-2"
-                            src={directionIcon}
-                            alt="Direction Icon"
-                            width="14"
-                            height="14"
-                          />
-                          Direction
-                        </div>
-                        <div>
-                          <img
-                            className="inline-block mr-2"
                             src={degreeIcon}
                             alt="Degree Icon"
                             width="14"
@@ -293,9 +280,20 @@ function Spacejam() {
                           />
                           Start Degree
                         </div>
-                        <div className="block-jam blue inline-block mt-1">
+                        <div>
                           <img
                             className="inline-block mr-2"
+                            src={directionIcon}
+                            alt="Direction Icon"
+                            width="14"
+                            height="14"
+                          />
+                          Direction
+                        </div>
+
+                        <div className="block-jam blue inline-block mt-2">
+                          <img
+                            className="inline-block mr-2 align-sub"
                             src={soundIcon}
                             alt="Sound Icon"
                             width="14"
@@ -308,79 +306,75 @@ function Spacejam() {
                   </div>
                 </div>
                 {planets.map((planet, index) => (
-                  <div className="panel mt-10 mb-3" key={planet.name}>
-                    <div
-                      className="planet-block pt-14 pb-6"
-                      style={{ backgroundColor: "#00000078" }}
-                    >
-                      <div className="orbit-tag">{`${planet.period}`}</div>
+                  <div className="panel mt-14 mb-3" key={planet.name}>
+                    <div className="planet-block ">
+                      <div className="orbit-tag text-theme-blue">{`${planet.period}`}</div>
                       <div className={`${planet.name} planet big mb-3`}> </div>
-                      <h4 className="text-xl font-bold mb-3 text-center text-white">
+                      <h4 className="text-lg mb-2 text-center text-white">
                         {`${planet.name}`}
                       </h4>
 
-                      <div className=" ">
-                        <div className="mx-auto w-fit text-white ">
-                          <div>
-                            <div className=" leading-7  text-base">
-                              <img
-                                className="inline-block mr-2"
-                                src={clockIcon}
-                                alt="Tick Icon"
-                                width="14"
-                                height="14"
-                              />
+                      <div className="mx-auto w-fit text-white ">
+                        <div>
+                          <div className=" leading-7  text-base">
+                            <img
+                              className="inline-block mr-2 opacity-50"
+                              src={clockIcon}
+                              alt="Tick Icon"
+                              width="14"
+                              height="14"
+                            />
 
-                              {updatedPlanets[index].interval}
-                            </div>
+                            {updatedPlanets[index].interval}
                           </div>
-                          <div>
-                            <div className=" leading-7 text-base">
-                              <img
-                                className="inline-block mr-2"
-                                src={directionIcon}
-                                alt="Direction Icon"
-                                width="14"
-                                height="14"
-                              />
+                        </div>
+                        <div>
+                          <div className=" leading-7 text-base">
+                            <img
+                              className="inline-block mr-2 opacity-50"
+                              src={degreeIcon}
+                              alt="Degree Icon"
+                              width="14"
+                              height="14"
+                            />
 
-                              {updatedPlanets[index].direction}
-                            </div>
+                            {updatedPlanets[index].startPositionDeg}
                           </div>
-                          <div>
-                            <div className=" leading-7 text-base">
-                              <img
-                                className="inline-block mr-2"
-                                src={degreeIcon}
-                                alt="Degree Icon"
-                                width="14"
-                                height="14"
-                              />
+                        </div>
 
-                              {updatedPlanets[index].startPositionDeg}
-                            </div>
-                          </div>
+                        <div>
+                          <div className=" leading-7 text-base">
+                            <img
+                              className="inline-block mr-2 opacity-50"
+                              src={directionIcon}
+                              alt="Direction Icon"
+                              width="14"
+                              height="14"
+                            />
 
-                          <div
-                            className={`block-jam inline-block mt-1 ${
-                              updatedPlanets[index].drumNumber !== 0
-                                ? "blue"
-                                : "red"
-                            }`}
-                          >
-                            <span className="text-base">
-                              <img
-                                className="inline-block mr-2"
-                                src={soundIcon}
-                                alt="Sound Icon"
-                                width="14"
-                                height="14"
-                              />
-                            </span>
-                            <span className="text-lg ">
-                              {updatedPlanets[index].drumNumber}
-                            </span>
+                            {updatedPlanets[index].direction}
                           </div>
+                        </div>
+
+                        <div
+                          className={`block-jam inline-block  mt-3 ${
+                            updatedPlanets[index].drumNumber !== 0
+                              ? "blue"
+                              : "red"
+                          }`}
+                        >
+                          <span className="text-base">
+                            <img
+                              className="inline-block mr-2"
+                              src={soundIcon}
+                              alt="Sound Icon"
+                              width="14"
+                              height="14"
+                            />
+                          </span>
+                          <span className="text-lg ">
+                            {updatedPlanets[index].drumNumber}
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -391,7 +385,7 @@ function Spacejam() {
               <div className="edit-mode-B mb-5 clear-both">
                 {planets.map((planet, index) => (
                   <div className="panel mb-1" key={planet.name}>
-                    <div className="planet-block py-4 pr-7">
+                    <div className="planet-block py-3 ">
                       <div className="orbit-tag">{` ${planet.period}`}</div>
 
                       <div className="flex">
@@ -401,12 +395,12 @@ function Spacejam() {
                             src={`/image/${planet.name}.jpg`}
                             alt={planet.name}
                           />
-                          <h4 className="text-slate-400 text-sm">{`${planet.name}`}</h4>
+                           
                         </div>
                         <div className="flex-1">
                           <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
                             <div>
-                              <div>
+                              <div className="mb-1">
                                 <span className="text-slate-400 text-sm">
                                   Orbit Time
                                 </span>
@@ -440,42 +434,9 @@ function Spacejam() {
                                 }}
                               ></input>
                             </div>
-                            <div>
-                              <div>
-                                <span className="text-slate-400 text-sm">
-                                  Direction
-                                </span>
-                                <input
-                                  className="inputNumber inputOnes"
-                                  type="number"
-                                  min="-1"
-                                  max="1"
-                                  value={updatedPlanets[index].direction}
-                                  onChange={(e) => {
-                                    handleInputChange(
-                                      index,
-                                      "direction",
-                                      Number(e.target.value)
-                                    );
-                                  }}
-                                ></input>
-                                <select
-                                  value={updatedPlanets[index].direction}
-                                  onChange={(e) => {
-                                    handleInputChange(
-                                      index,
-                                      "direction",
-                                      Number(e.target.value)
-                                    );
-                                  }}
-                                >
-                                  <option value={1}>Clockwise</option>
-                                  <option value={-1}>Counterclockwise</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div>
-                              <div>
+
+                            <div className=" ">
+                              <div className="mb-1">
                                 <span className="text-slate-400 text-sm">
                                   Degree
                                 </span>
@@ -493,22 +454,57 @@ function Spacejam() {
                                     );
                                   }}
                                 ></input>
+                              </div>
+                              <input
+                                type="range"
+                                className="slider"
+                                value={updatedPlanets[index].startPositionDeg}
+                                min="0"
+                                max="360"
+                                onChange={(e) => {
+                                  handleInputChange(
+                                    index,
+                                    "startPositionDeg",
+                                    Number(e.target.value)
+                                  );
+                                }}
+                              ></input>
+                            </div>
+                            <div>
+                              <div className="mb-1">
+                                <span className="text-slate-400 text-sm">
+                                  Direction
+                                </span>
                                 <input
-                                  type="range"
-                                  className="slider"
-                                  value={updatedPlanets[index].startPositionDeg}
-                                  min="0"
-                                  max="360"
+                                  className="inputNumber inputOnes"
+                                  type="number"
+                                  min="-1"
+                                  max="1"
+                                  value={updatedPlanets[index].direction}
                                   onChange={(e) => {
                                     handleInputChange(
                                       index,
-                                      "startPositionDeg",
+                                      "direction",
                                       Number(e.target.value)
                                     );
                                   }}
                                 ></input>
                               </div>
+                              <select
+                                value={updatedPlanets[index].direction}
+                                onChange={(e) => {
+                                  handleInputChange(
+                                    index,
+                                    "direction",
+                                    Number(e.target.value)
+                                  );
+                                }}
+                              >
+                                <option value={1}>Clockwise</option>
+                                <option value={-1}>Counterclockwise</option>
+                              </select>
                             </div>
+
                             <div
                               className={`block-jam inline-block ${
                                 updatedPlanets[index].drumNumber !== 0
@@ -518,7 +514,13 @@ function Spacejam() {
                             >
                               <div className="inline-block">
                                 <span className="text-slate-400 text-sm">
-                                  Play Sound
+                                  <img
+                                    className="inline-block "
+                                    src={soundIcon}
+                                    alt="Sound Icon"
+                                    width="14"
+                                    height="14"
+                                  />
                                 </span>
                                 <input
                                   className="inputNumber inputOnes"
@@ -536,7 +538,7 @@ function Spacejam() {
                                 ></input>
                               </div>
                               <select
-                                className="inline-block"
+                                className="inline-block mt-1"
                                 value={updatedPlanets[index].drumNumber}
                                 onChange={(e) => {
                                   handleInputChange(
