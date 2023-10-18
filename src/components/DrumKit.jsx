@@ -213,10 +213,7 @@ const Keyboard = () => {
               </tbody>
             </table>
           </div>
-          <p className="text-xl font-light text-gray-200 max-w-3xl leading-[2rem] mb-4">
-            <span className="font-bold text-gradient-1 text-2xl">Tips:</span>{" "}
-            You can create a Half Note rhythm with two Whole Note planets!
-          </p>
+ 
  
         </div>
       </div>
